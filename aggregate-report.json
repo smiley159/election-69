@@ -1,0 +1,107 @@
+{
+  "source": "area-candidates/*.json from result-ect-unofficial-party-list",
+  "aggregated": {
+    "areaCount": 400,
+    "totalVotes": 34394820,
+    "goodVotes": 31838525,
+    "badVotes": 1550185,
+    "noVotes": 1006110
+  },
+  "compareToSummary": {
+    "statisticsPartyList": {
+      "summary": {
+        "total": 34394820,
+        "goodVotes": 31838525,
+        "badVotes": 1550185,
+        "noVotes": 1006110
+      },
+      "diff": {
+        "total": 0,
+        "goodVotes": 0,
+        "badVotes": 0,
+        "noVotes": 0
+      }
+    },
+    "statisticsConstitution": {
+      "summary": {
+        "total": 36223467,
+        "goodVotes": 33557675,
+        "badVotes": 1228683,
+        "noVotes": 1437109
+      },
+      "diff": {
+        "total": -1828647,
+        "goodVotes": -1719150,
+        "badVotes": 321502,
+        "noVotes": -430999
+      }
+    },
+    "partyVotesCheck": {
+      "vsSummaryDataPartyListVotesMismatchCount": 0,
+      "vsSummaryDataConstituencyVotesMismatchCount": 60,
+      "sampleMismatchPartyListVotes": [],
+      "sampleMismatchConstituencyVotes": [
+        {
+          "partyCode": "PARTY-0001",
+          "summaryConstituencyVotes": 2466,
+          "aggregated": 284090,
+          "diff": 281624
+        },
+        {
+          "partyCode": "PARTY-0002",
+          "summaryConstituencyVotes": 480,
+          "aggregated": 627376,
+          "diff": 626896
+        },
+        {
+          "partyCode": "PARTY-0003",
+          "summaryConstituencyVotes": 799,
+          "aggregated": 293827,
+          "diff": 293028
+        },
+        {
+          "partyCode": "PARTY-0004",
+          "summaryConstituencyVotes": 1269,
+          "aggregated": 229899,
+          "diff": 228630
+        },
+        {
+          "partyCode": "PARTY-0005",
+          "summaryConstituencyVotes": 2791,
+          "aggregated": 402183,
+          "diff": 399392
+        },
+        {
+          "partyCode": "PARTY-0006",
+          "summaryConstituencyVotes": 306755,
+          "aggregated": 703381,
+          "diff": 396626
+        },
+        {
+          "partyCode": "PARTY-0007",
+          "summaryConstituencyVotes": 31659,
+          "aggregated": 107865,
+          "diff": 76206
+        },
+        {
+          "partyCode": "PARTY-0008",
+          "summaryConstituencyVotes": 22422,
+          "aggregated": 237102,
+          "diff": 214680
+        },
+        {
+          "partyCode": "PARTY-0009",
+          "summaryConstituencyVotes": 6031405,
+          "aggregated": 5134599,
+          "diff": -896806
+        },
+        {
+          "partyCode": "PARTY-0010",
+          "summaryConstituencyVotes": 19289,
+          "aggregated": 156283,
+          "diff": 136994
+        }
+      ]
+    }
+  }
+}

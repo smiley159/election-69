@@ -1,0 +1,3645 @@
+{
+  "regions": [
+    {
+      "code": "bangkok",
+      "name": "กรุงเทพฯ",
+      "totalAreas": 33
+    },
+    {
+      "code": "central",
+      "name": "กลาง",
+      "totalAreas": 76
+    },
+    {
+      "code": "east",
+      "name": "ตะวันออก",
+      "totalAreas": 29
+    },
+    {
+      "code": "north",
+      "name": "เหนือ",
+      "totalAreas": 70
+    },
+    {
+      "code": "northeast",
+      "name": "อีสาน",
+      "totalAreas": 133
+    },
+    {
+      "code": "south",
+      "name": "ใต้",
+      "totalAreas": 59
+    }
+  ],
+  "provinces": [
+    {
+      "code": "PROVINCE-10",
+      "regionCode": "bangkok",
+      "name": "กรุงเทพมหานคร"
+    },
+    {
+      "code": "PROVINCE-11",
+      "regionCode": "central",
+      "name": "สมุทรปราการ"
+    },
+    {
+      "code": "PROVINCE-12",
+      "regionCode": "central",
+      "name": "นนทบุรี"
+    },
+    {
+      "code": "PROVINCE-13",
+      "regionCode": "central",
+      "name": "ปทุมธานี"
+    },
+    {
+      "code": "PROVINCE-14",
+      "regionCode": "central",
+      "name": "พระนครศรีอยุธยา"
+    },
+    {
+      "code": "PROVINCE-15",
+      "regionCode": "central",
+      "name": "อ่างทอง"
+    },
+    {
+      "code": "PROVINCE-16",
+      "regionCode": "central",
+      "name": "ลพบุรี"
+    },
+    {
+      "code": "PROVINCE-17",
+      "regionCode": "central",
+      "name": "สิงห์บุรี"
+    },
+    {
+      "code": "PROVINCE-18",
+      "regionCode": "central",
+      "name": "ชัยนาท"
+    },
+    {
+      "code": "PROVINCE-19",
+      "regionCode": "central",
+      "name": "สระบุรี"
+    },
+    {
+      "code": "PROVINCE-20",
+      "regionCode": "east",
+      "name": "ชลบุรี"
+    },
+    {
+      "code": "PROVINCE-21",
+      "regionCode": "east",
+      "name": "ระยอง"
+    },
+    {
+      "code": "PROVINCE-22",
+      "regionCode": "east",
+      "name": "จันทบุรี"
+    },
+    {
+      "code": "PROVINCE-23",
+      "regionCode": "east",
+      "name": "ตราด"
+    },
+    {
+      "code": "PROVINCE-24",
+      "regionCode": "east",
+      "name": "ฉะเชิงเทรา"
+    },
+    {
+      "code": "PROVINCE-25",
+      "regionCode": "east",
+      "name": "ปราจีนบุรี"
+    },
+    {
+      "code": "PROVINCE-26",
+      "regionCode": "central",
+      "name": "นครนายก"
+    },
+    {
+      "code": "PROVINCE-27",
+      "regionCode": "east",
+      "name": "สระแก้ว"
+    },
+    {
+      "code": "PROVINCE-30",
+      "regionCode": "northeast",
+      "name": "นครราชสีมา"
+    },
+    {
+      "code": "PROVINCE-31",
+      "regionCode": "northeast",
+      "name": "บุรีรัมย์"
+    },
+    {
+      "code": "PROVINCE-32",
+      "regionCode": "northeast",
+      "name": "สุรินทร์"
+    },
+    {
+      "code": "PROVINCE-33",
+      "regionCode": "northeast",
+      "name": "ศรีสะเกษ"
+    },
+    {
+      "code": "PROVINCE-34",
+      "regionCode": "northeast",
+      "name": "อุบลราชธานี"
+    },
+    {
+      "code": "PROVINCE-35",
+      "regionCode": "northeast",
+      "name": "ยโสธร"
+    },
+    {
+      "code": "PROVINCE-36",
+      "regionCode": "northeast",
+      "name": "ชัยภูมิ"
+    },
+    {
+      "code": "PROVINCE-37",
+      "regionCode": "northeast",
+      "name": "อำนาจเจริญ"
+    },
+    {
+      "code": "PROVINCE-38",
+      "regionCode": "northeast",
+      "name": "บึงกาฬ"
+    },
+    {
+      "code": "PROVINCE-39",
+      "regionCode": "northeast",
+      "name": "หนองบัวลำภู"
+    },
+    {
+      "code": "PROVINCE-40",
+      "regionCode": "northeast",
+      "name": "ขอนแก่น"
+    },
+    {
+      "code": "PROVINCE-41",
+      "regionCode": "northeast",
+      "name": "อุดรธานี"
+    },
+    {
+      "code": "PROVINCE-42",
+      "regionCode": "northeast",
+      "name": "เลย"
+    },
+    {
+      "code": "PROVINCE-43",
+      "regionCode": "northeast",
+      "name": "หนองคาย"
+    },
+    {
+      "code": "PROVINCE-44",
+      "regionCode": "northeast",
+      "name": "มหาสารคาม"
+    },
+    {
+      "code": "PROVINCE-45",
+      "regionCode": "northeast",
+      "name": "ร้อยเอ็ด"
+    },
+    {
+      "code": "PROVINCE-46",
+      "regionCode": "northeast",
+      "name": "กาฬสินธุ์"
+    },
+    {
+      "code": "PROVINCE-47",
+      "regionCode": "northeast",
+      "name": "สกลนคร"
+    },
+    {
+      "code": "PROVINCE-48",
+      "regionCode": "northeast",
+      "name": "นครพนม"
+    },
+    {
+      "code": "PROVINCE-49",
+      "regionCode": "northeast",
+      "name": "มุกดาหาร"
+    },
+    {
+      "code": "PROVINCE-50",
+      "regionCode": "north",
+      "name": "เชียงใหม่"
+    },
+    {
+      "code": "PROVINCE-51",
+      "regionCode": "north",
+      "name": "ลำพูน"
+    },
+    {
+      "code": "PROVINCE-52",
+      "regionCode": "north",
+      "name": "ลำปาง"
+    },
+    {
+      "code": "PROVINCE-53",
+      "regionCode": "north",
+      "name": "อุตรดิตถ์"
+    },
+    {
+      "code": "PROVINCE-54",
+      "regionCode": "north",
+      "name": "แพร่"
+    },
+    {
+      "code": "PROVINCE-55",
+      "regionCode": "north",
+      "name": "น่าน"
+    },
+    {
+      "code": "PROVINCE-56",
+      "regionCode": "north",
+      "name": "พะเยา"
+    },
+    {
+      "code": "PROVINCE-57",
+      "regionCode": "north",
+      "name": "เชียงราย"
+    },
+    {
+      "code": "PROVINCE-58",
+      "regionCode": "north",
+      "name": "แม่ฮ่องสอน"
+    },
+    {
+      "code": "PROVINCE-60",
+      "regionCode": "north",
+      "name": "นครสวรรค์"
+    },
+    {
+      "code": "PROVINCE-61",
+      "regionCode": "north",
+      "name": "อุทัยธานี"
+    },
+    {
+      "code": "PROVINCE-62",
+      "regionCode": "north",
+      "name": "กำแพงเพชร"
+    },
+    {
+      "code": "PROVINCE-63",
+      "regionCode": "north",
+      "name": "ตาก"
+    },
+    {
+      "code": "PROVINCE-64",
+      "regionCode": "north",
+      "name": "สุโขทัย"
+    },
+    {
+      "code": "PROVINCE-65",
+      "regionCode": "north",
+      "name": "พิษณุโลก"
+    },
+    {
+      "code": "PROVINCE-66",
+      "regionCode": "north",
+      "name": "พิจิตร"
+    },
+    {
+      "code": "PROVINCE-67",
+      "regionCode": "north",
+      "name": "เพชรบูรณ์"
+    },
+    {
+      "code": "PROVINCE-70",
+      "regionCode": "central",
+      "name": "ราชบุรี"
+    },
+    {
+      "code": "PROVINCE-71",
+      "regionCode": "central",
+      "name": "กาญจนบุรี"
+    },
+    {
+      "code": "PROVINCE-72",
+      "regionCode": "central",
+      "name": "สุพรรณบุรี"
+    },
+    {
+      "code": "PROVINCE-73",
+      "regionCode": "central",
+      "name": "นครปฐม"
+    },
+    {
+      "code": "PROVINCE-74",
+      "regionCode": "central",
+      "name": "สมุทรสาคร"
+    },
+    {
+      "code": "PROVINCE-75",
+      "regionCode": "central",
+      "name": "สมุทรสงคราม"
+    },
+    {
+      "code": "PROVINCE-76",
+      "regionCode": "central",
+      "name": "เพชรบุรี"
+    },
+    {
+      "code": "PROVINCE-77",
+      "regionCode": "central",
+      "name": "ประจวบคีรีขันธ์"
+    },
+    {
+      "code": "PROVINCE-80",
+      "regionCode": "south",
+      "name": "นครศรีธรรมราช"
+    },
+    {
+      "code": "PROVINCE-81",
+      "regionCode": "south",
+      "name": "กระบี่"
+    },
+    {
+      "code": "PROVINCE-82",
+      "regionCode": "south",
+      "name": "พังงา"
+    },
+    {
+      "code": "PROVINCE-83",
+      "regionCode": "south",
+      "name": "ภูเก็ต"
+    },
+    {
+      "code": "PROVINCE-84",
+      "regionCode": "south",
+      "name": "สุราษฎร์ธานี"
+    },
+    {
+      "code": "PROVINCE-85",
+      "regionCode": "south",
+      "name": "ระนอง"
+    },
+    {
+      "code": "PROVINCE-86",
+      "regionCode": "south",
+      "name": "ชุมพร"
+    },
+    {
+      "code": "PROVINCE-90",
+      "regionCode": "south",
+      "name": "สงขลา"
+    },
+    {
+      "code": "PROVINCE-91",
+      "regionCode": "south",
+      "name": "สตูล"
+    },
+    {
+      "code": "PROVINCE-92",
+      "regionCode": "south",
+      "name": "ตรัง"
+    },
+    {
+      "code": "PROVINCE-93",
+      "regionCode": "south",
+      "name": "พัทลุง"
+    },
+    {
+      "code": "PROVINCE-94",
+      "regionCode": "south",
+      "name": "ปัตตานี"
+    },
+    {
+      "code": "PROVINCE-95",
+      "regionCode": "south",
+      "name": "ยะลา"
+    },
+    {
+      "code": "PROVINCE-96",
+      "regionCode": "south",
+      "name": "นราธิวาส"
+    }
+  ],
+  "areas": [
+    {
+      "code": "AREA-8101",
+      "provinceCode": "PROVINCE-81",
+      "areaCode": "01",
+      "number": 1,
+      "name": "กระบี่ เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-8102",
+      "provinceCode": "PROVINCE-81",
+      "areaCode": "02",
+      "number": 2,
+      "name": "กระบี่ เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-8103",
+      "provinceCode": "PROVINCE-81",
+      "areaCode": "03",
+      "number": 3,
+      "name": "กระบี่ เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-1001",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "01",
+      "number": 1,
+      "name": "กรุงเทพมหานคร เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1010",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "10",
+      "number": 10,
+      "name": "กรุงเทพมหานคร เขต 10",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1011",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "11",
+      "number": 11,
+      "name": "กรุงเทพมหานคร เขต 11",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1012",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "12",
+      "number": 12,
+      "name": "กรุงเทพมหานคร เขต 12",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1013",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "13",
+      "number": 13,
+      "name": "กรุงเทพมหานคร เขต 13",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1014",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "14",
+      "number": 14,
+      "name": "กรุงเทพมหานคร เขต 14",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1015",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "15",
+      "number": 15,
+      "name": "กรุงเทพมหานคร เขต 15",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1016",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "16",
+      "number": 16,
+      "name": "กรุงเทพมหานคร เขต 16",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1017",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "17",
+      "number": 17,
+      "name": "กรุงเทพมหานคร เขต 17",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1018",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "18",
+      "number": 18,
+      "name": "กรุงเทพมหานคร เขต 18",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1019",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "19",
+      "number": 19,
+      "name": "กรุงเทพมหานคร เขต 19",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1002",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "02",
+      "number": 2,
+      "name": "กรุงเทพมหานคร เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1020",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "20",
+      "number": 20,
+      "name": "กรุงเทพมหานคร เขต 20",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-1021",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "21",
+      "number": 21,
+      "name": "กรุงเทพมหานคร เขต 21",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1022",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "22",
+      "number": 22,
+      "name": "กรุงเทพมหานคร เขต 22",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1023",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "23",
+      "number": 23,
+      "name": "กรุงเทพมหานคร เขต 23",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1024",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "24",
+      "number": 24,
+      "name": "กรุงเทพมหานคร เขต 24",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1025",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "25",
+      "number": 25,
+      "name": "กรุงเทพมหานคร เขต 25",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1026",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "26",
+      "number": 26,
+      "name": "กรุงเทพมหานคร เขต 26",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1027",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "27",
+      "number": 27,
+      "name": "กรุงเทพมหานคร เขต 27",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1028",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "28",
+      "number": 28,
+      "name": "กรุงเทพมหานคร เขต 28",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1029",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "29",
+      "number": 29,
+      "name": "กรุงเทพมหานคร เขต 29",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1003",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "03",
+      "number": 3,
+      "name": "กรุงเทพมหานคร เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1030",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "30",
+      "number": 30,
+      "name": "กรุงเทพมหานคร เขต 30",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1031",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "31",
+      "number": 31,
+      "name": "กรุงเทพมหานคร เขต 31",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1032",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "32",
+      "number": 32,
+      "name": "กรุงเทพมหานคร เขต 32",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1033",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "33",
+      "number": 33,
+      "name": "กรุงเทพมหานคร เขต 33",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1004",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "04",
+      "number": 4,
+      "name": "กรุงเทพมหานคร เขต 4",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1005",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "05",
+      "number": 5,
+      "name": "กรุงเทพมหานคร เขต 5",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1006",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "06",
+      "number": 6,
+      "name": "กรุงเทพมหานคร เขต 6",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1007",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "07",
+      "number": 7,
+      "name": "กรุงเทพมหานคร เขต 7",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1008",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "08",
+      "number": 8,
+      "name": "กรุงเทพมหานคร เขต 8",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1009",
+      "provinceCode": "PROVINCE-10",
+      "areaCode": "09",
+      "number": 9,
+      "name": "กรุงเทพมหานคร เขต 9",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-7101",
+      "provinceCode": "PROVINCE-71",
+      "areaCode": "01",
+      "number": 1,
+      "name": "กาญจนบุรี เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-7102",
+      "provinceCode": "PROVINCE-71",
+      "areaCode": "02",
+      "number": 2,
+      "name": "กาญจนบุรี เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-7103",
+      "provinceCode": "PROVINCE-71",
+      "areaCode": "03",
+      "number": 3,
+      "name": "กาญจนบุรี เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-7104",
+      "provinceCode": "PROVINCE-71",
+      "areaCode": "04",
+      "number": 4,
+      "name": "กาญจนบุรี เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-7105",
+      "provinceCode": "PROVINCE-71",
+      "areaCode": "05",
+      "number": 5,
+      "name": "กาญจนบุรี เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4601",
+      "provinceCode": "PROVINCE-46",
+      "areaCode": "01",
+      "number": 1,
+      "name": "กาฬสินธุ์ เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4602",
+      "provinceCode": "PROVINCE-46",
+      "areaCode": "02",
+      "number": 2,
+      "name": "กาฬสินธุ์ เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4603",
+      "provinceCode": "PROVINCE-46",
+      "areaCode": "03",
+      "number": 3,
+      "name": "กาฬสินธุ์ เขต 3",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-4604",
+      "provinceCode": "PROVINCE-46",
+      "areaCode": "04",
+      "number": 4,
+      "name": "กาฬสินธุ์ เขต 4",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-4605",
+      "provinceCode": "PROVINCE-46",
+      "areaCode": "05",
+      "number": 5,
+      "name": "กาฬสินธุ์ เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4606",
+      "provinceCode": "PROVINCE-46",
+      "areaCode": "06",
+      "number": 6,
+      "name": "กาฬสินธุ์ เขต 6",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-6201",
+      "provinceCode": "PROVINCE-62",
+      "areaCode": "01",
+      "number": 1,
+      "name": "กำแพงเพชร เขต 1",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-6202",
+      "provinceCode": "PROVINCE-62",
+      "areaCode": "02",
+      "number": 2,
+      "name": "กำแพงเพชร เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-6203",
+      "provinceCode": "PROVINCE-62",
+      "areaCode": "03",
+      "number": 3,
+      "name": "กำแพงเพชร เขต 3",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-6204",
+      "provinceCode": "PROVINCE-62",
+      "areaCode": "04",
+      "number": 4,
+      "name": "กำแพงเพชร เขต 4",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-4001",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ขอนแก่น เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-4010",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "10",
+      "number": 10,
+      "name": "ขอนแก่น เขต 10",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4011",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "11",
+      "number": 11,
+      "name": "ขอนแก่น เขต 11",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-4002",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ขอนแก่น เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-4003",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ขอนแก่น เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-4004",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ขอนแก่น เขต 4",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-4005",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "05",
+      "number": 5,
+      "name": "ขอนแก่น เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4006",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "06",
+      "number": 6,
+      "name": "ขอนแก่น เขต 6",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4007",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "07",
+      "number": 7,
+      "name": "ขอนแก่น เขต 7",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4008",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "08",
+      "number": 8,
+      "name": "ขอนแก่น เขต 8",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4009",
+      "provinceCode": "PROVINCE-40",
+      "areaCode": "09",
+      "number": 9,
+      "name": "ขอนแก่น เขต 9",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-2201",
+      "provinceCode": "PROVINCE-22",
+      "areaCode": "01",
+      "number": 1,
+      "name": "จันทบุรี เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2202",
+      "provinceCode": "PROVINCE-22",
+      "areaCode": "02",
+      "number": 2,
+      "name": "จันทบุรี เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2203",
+      "provinceCode": "PROVINCE-22",
+      "areaCode": "03",
+      "number": 3,
+      "name": "จันทบุรี เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2401",
+      "provinceCode": "PROVINCE-24",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ฉะเชิงเทรา เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-2402",
+      "provinceCode": "PROVINCE-24",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ฉะเชิงเทรา เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-2403",
+      "provinceCode": "PROVINCE-24",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ฉะเชิงเทรา เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-2404",
+      "provinceCode": "PROVINCE-24",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ฉะเชิงเทรา เขต 4",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2001",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ชลบุรี เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2010",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "10",
+      "number": 10,
+      "name": "ชลบุรี เขต 10",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-2002",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ชลบุรี เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2003",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ชลบุรี เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2004",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ชลบุรี เขต 4",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-2005",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "05",
+      "number": 5,
+      "name": "ชลบุรี เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-2006",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "06",
+      "number": 6,
+      "name": "ชลบุรี เขต 6",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2007",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "07",
+      "number": 7,
+      "name": "ชลบุรี เขต 7",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2008",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "08",
+      "number": 8,
+      "name": "ชลบุรี เขต 8",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2009",
+      "provinceCode": "PROVINCE-20",
+      "areaCode": "09",
+      "number": 9,
+      "name": "ชลบุรี เขต 9",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1801",
+      "provinceCode": "PROVINCE-18",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ชัยนาท เขต 1",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-1802",
+      "provinceCode": "PROVINCE-18",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ชัยนาท เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3601",
+      "provinceCode": "PROVINCE-36",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ชัยภูมิ เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3602",
+      "provinceCode": "PROVINCE-36",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ชัยภูมิ เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3603",
+      "provinceCode": "PROVINCE-36",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ชัยภูมิ เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3604",
+      "provinceCode": "PROVINCE-36",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ชัยภูมิ เขต 4",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-3605",
+      "provinceCode": "PROVINCE-36",
+      "areaCode": "05",
+      "number": 5,
+      "name": "ชัยภูมิ เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3606",
+      "provinceCode": "PROVINCE-36",
+      "areaCode": "06",
+      "number": 6,
+      "name": "ชัยภูมิ เขต 6",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3607",
+      "provinceCode": "PROVINCE-36",
+      "areaCode": "07",
+      "number": 7,
+      "name": "ชัยภูมิ เขต 7",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-8601",
+      "provinceCode": "PROVINCE-86",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ชุมพร เขต 1",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-8602",
+      "provinceCode": "PROVINCE-86",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ชุมพร เขต 2",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-8603",
+      "provinceCode": "PROVINCE-86",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ชุมพร เขต 3",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-5701",
+      "provinceCode": "PROVINCE-57",
+      "areaCode": "01",
+      "number": 1,
+      "name": "เชียงราย เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5702",
+      "provinceCode": "PROVINCE-57",
+      "areaCode": "02",
+      "number": 2,
+      "name": "เชียงราย เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5703",
+      "provinceCode": "PROVINCE-57",
+      "areaCode": "03",
+      "number": 3,
+      "name": "เชียงราย เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5704",
+      "provinceCode": "PROVINCE-57",
+      "areaCode": "04",
+      "number": 4,
+      "name": "เชียงราย เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5705",
+      "provinceCode": "PROVINCE-57",
+      "areaCode": "05",
+      "number": 5,
+      "name": "เชียงราย เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5706",
+      "provinceCode": "PROVINCE-57",
+      "areaCode": "06",
+      "number": 6,
+      "name": "เชียงราย เขต 6",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5707",
+      "provinceCode": "PROVINCE-57",
+      "areaCode": "07",
+      "number": 7,
+      "name": "เชียงราย เขต 7",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5001",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "01",
+      "number": 1,
+      "name": "เชียงใหม่ เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5010",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "10",
+      "number": 10,
+      "name": "เชียงใหม่ เขต 10",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5002",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "02",
+      "number": 2,
+      "name": "เชียงใหม่ เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5003",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "03",
+      "number": 3,
+      "name": "เชียงใหม่ เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5004",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "04",
+      "number": 4,
+      "name": "เชียงใหม่ เขต 4",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5005",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "05",
+      "number": 5,
+      "name": "เชียงใหม่ เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5006",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "06",
+      "number": 6,
+      "name": "เชียงใหม่ เขต 6",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5007",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "07",
+      "number": 7,
+      "name": "เชียงใหม่ เขต 7",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5008",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "08",
+      "number": 8,
+      "name": "เชียงใหม่ เขต 8",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5009",
+      "provinceCode": "PROVINCE-50",
+      "areaCode": "09",
+      "number": 9,
+      "name": "เชียงใหม่ เขต 9",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-9201",
+      "provinceCode": "PROVINCE-92",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ตรัง เขต 1",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-9202",
+      "provinceCode": "PROVINCE-92",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ตรัง เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-9203",
+      "provinceCode": "PROVINCE-92",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ตรัง เขต 3",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-9204",
+      "provinceCode": "PROVINCE-92",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ตรัง เขต 4",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-2301",
+      "provinceCode": "PROVINCE-23",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ตราด เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-6301",
+      "provinceCode": "PROVINCE-63",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ตาก เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-6302",
+      "provinceCode": "PROVINCE-63",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ตาก เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-6303",
+      "provinceCode": "PROVINCE-63",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ตาก เขต 3",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-2601",
+      "provinceCode": "PROVINCE-26",
+      "areaCode": "01",
+      "number": 1,
+      "name": "นครนายก เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-2602",
+      "provinceCode": "PROVINCE-26",
+      "areaCode": "02",
+      "number": 2,
+      "name": "นครนายก เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-7301",
+      "provinceCode": "PROVINCE-73",
+      "areaCode": "01",
+      "number": 1,
+      "name": "นครปฐม เขต 1",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-7302",
+      "provinceCode": "PROVINCE-73",
+      "areaCode": "02",
+      "number": 2,
+      "name": "นครปฐม เขต 2",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-7303",
+      "provinceCode": "PROVINCE-73",
+      "areaCode": "03",
+      "number": 3,
+      "name": "นครปฐม เขต 3",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-7304",
+      "provinceCode": "PROVINCE-73",
+      "areaCode": "04",
+      "number": 4,
+      "name": "นครปฐม เขต 4",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-7305",
+      "provinceCode": "PROVINCE-73",
+      "areaCode": "05",
+      "number": 5,
+      "name": "นครปฐม เขต 5",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-7306",
+      "provinceCode": "PROVINCE-73",
+      "areaCode": "06",
+      "number": 6,
+      "name": "นครปฐม เขต 6",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-4801",
+      "provinceCode": "PROVINCE-48",
+      "areaCode": "01",
+      "number": 1,
+      "name": "นครพนม เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4802",
+      "provinceCode": "PROVINCE-48",
+      "areaCode": "02",
+      "number": 2,
+      "name": "นครพนม เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4803",
+      "provinceCode": "PROVINCE-48",
+      "areaCode": "03",
+      "number": 3,
+      "name": "นครพนม เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-4804",
+      "provinceCode": "PROVINCE-48",
+      "areaCode": "04",
+      "number": 4,
+      "name": "นครพนม เขต 4",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3001",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "01",
+      "number": 1,
+      "name": "นครราชสีมา เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-3010",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "10",
+      "number": 10,
+      "name": "นครราชสีมา เขต 10",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3011",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "11",
+      "number": 11,
+      "name": "นครราชสีมา เขต 11",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3012",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "12",
+      "number": 12,
+      "name": "นครราชสีมา เขต 12",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3013",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "13",
+      "number": 13,
+      "name": "นครราชสีมา เขต 13",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3014",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "14",
+      "number": 14,
+      "name": "นครราชสีมา เขต 14",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3015",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "15",
+      "number": 15,
+      "name": "นครราชสีมา เขต 15",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3016",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "16",
+      "number": 16,
+      "name": "นครราชสีมา เขต 16",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3002",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "02",
+      "number": 2,
+      "name": "นครราชสีมา เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-3003",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "03",
+      "number": 3,
+      "name": "นครราชสีมา เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-3004",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "04",
+      "number": 4,
+      "name": "นครราชสีมา เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3005",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "05",
+      "number": 5,
+      "name": "นครราชสีมา เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3006",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "06",
+      "number": 6,
+      "name": "นครราชสีมา เขต 6",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3007",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "07",
+      "number": 7,
+      "name": "นครราชสีมา เขต 7",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3008",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "08",
+      "number": 8,
+      "name": "นครราชสีมา เขต 8",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3009",
+      "provinceCode": "PROVINCE-30",
+      "areaCode": "09",
+      "number": 9,
+      "name": "นครราชสีมา เขต 9",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-8001",
+      "provinceCode": "PROVINCE-80",
+      "areaCode": "01",
+      "number": 1,
+      "name": "นครศรีธรรมราช เขต 1",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-8002",
+      "provinceCode": "PROVINCE-80",
+      "areaCode": "02",
+      "number": 2,
+      "name": "นครศรีธรรมราช เขต 2",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-8003",
+      "provinceCode": "PROVINCE-80",
+      "areaCode": "03",
+      "number": 3,
+      "name": "นครศรีธรรมราช เขต 3",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-8004",
+      "provinceCode": "PROVINCE-80",
+      "areaCode": "04",
+      "number": 4,
+      "name": "นครศรีธรรมราช เขต 4",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-8005",
+      "provinceCode": "PROVINCE-80",
+      "areaCode": "05",
+      "number": 5,
+      "name": "นครศรีธรรมราช เขต 5",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-8006",
+      "provinceCode": "PROVINCE-80",
+      "areaCode": "06",
+      "number": 6,
+      "name": "นครศรีธรรมราช เขต 6",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-8007",
+      "provinceCode": "PROVINCE-80",
+      "areaCode": "07",
+      "number": 7,
+      "name": "นครศรีธรรมราช เขต 7",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-8008",
+      "provinceCode": "PROVINCE-80",
+      "areaCode": "08",
+      "number": 8,
+      "name": "นครศรีธรรมราช เขต 8",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-8009",
+      "provinceCode": "PROVINCE-80",
+      "areaCode": "09",
+      "number": 9,
+      "name": "นครศรีธรรมราช เขต 9",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-6001",
+      "provinceCode": "PROVINCE-60",
+      "areaCode": "01",
+      "number": 1,
+      "name": "นครสวรรค์ เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-6002",
+      "provinceCode": "PROVINCE-60",
+      "areaCode": "02",
+      "number": 2,
+      "name": "นครสวรรค์ เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-6003",
+      "provinceCode": "PROVINCE-60",
+      "areaCode": "03",
+      "number": 3,
+      "name": "นครสวรรค์ เขต 3",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-6004",
+      "provinceCode": "PROVINCE-60",
+      "areaCode": "04",
+      "number": 4,
+      "name": "นครสวรรค์ เขต 4",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-6005",
+      "provinceCode": "PROVINCE-60",
+      "areaCode": "05",
+      "number": 5,
+      "name": "นครสวรรค์ เขต 5",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-6006",
+      "provinceCode": "PROVINCE-60",
+      "areaCode": "06",
+      "number": 6,
+      "name": "นครสวรรค์ เขต 6",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-1201",
+      "provinceCode": "PROVINCE-12",
+      "areaCode": "01",
+      "number": 1,
+      "name": "นนทบุรี เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1202",
+      "provinceCode": "PROVINCE-12",
+      "areaCode": "02",
+      "number": 2,
+      "name": "นนทบุรี เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1203",
+      "provinceCode": "PROVINCE-12",
+      "areaCode": "03",
+      "number": 3,
+      "name": "นนทบุรี เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1204",
+      "provinceCode": "PROVINCE-12",
+      "areaCode": "04",
+      "number": 4,
+      "name": "นนทบุรี เขต 4",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1205",
+      "provinceCode": "PROVINCE-12",
+      "areaCode": "05",
+      "number": 5,
+      "name": "นนทบุรี เขต 5",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1206",
+      "provinceCode": "PROVINCE-12",
+      "areaCode": "06",
+      "number": 6,
+      "name": "นนทบุรี เขต 6",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1207",
+      "provinceCode": "PROVINCE-12",
+      "areaCode": "07",
+      "number": 7,
+      "name": "นนทบุรี เขต 7",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1208",
+      "provinceCode": "PROVINCE-12",
+      "areaCode": "08",
+      "number": 8,
+      "name": "นนทบุรี เขต 8",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-9601",
+      "provinceCode": "PROVINCE-96",
+      "areaCode": "01",
+      "number": 1,
+      "name": "นราธิวาส เขต 1",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-9602",
+      "provinceCode": "PROVINCE-96",
+      "areaCode": "02",
+      "number": 2,
+      "name": "นราธิวาส เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-9603",
+      "provinceCode": "PROVINCE-96",
+      "areaCode": "03",
+      "number": 3,
+      "name": "นราธิวาส เขต 3",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-9604",
+      "provinceCode": "PROVINCE-96",
+      "areaCode": "04",
+      "number": 4,
+      "name": "นราธิวาส เขต 4",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-9605",
+      "provinceCode": "PROVINCE-96",
+      "areaCode": "05",
+      "number": 5,
+      "name": "นราธิวาส เขต 5",
+      "win66PartyCode": "PARTY-0033"
+    },
+    {
+      "code": "AREA-5501",
+      "provinceCode": "PROVINCE-55",
+      "areaCode": "01",
+      "number": 1,
+      "name": "น่าน เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5502",
+      "provinceCode": "PROVINCE-55",
+      "areaCode": "02",
+      "number": 2,
+      "name": "น่าน เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5503",
+      "provinceCode": "PROVINCE-55",
+      "areaCode": "03",
+      "number": 3,
+      "name": "น่าน เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3801",
+      "provinceCode": "PROVINCE-38",
+      "areaCode": "01",
+      "number": 1,
+      "name": "บึงกาฬ เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3802",
+      "provinceCode": "PROVINCE-38",
+      "areaCode": "02",
+      "number": 2,
+      "name": "บึงกาฬ เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3803",
+      "provinceCode": "PROVINCE-38",
+      "areaCode": "03",
+      "number": 3,
+      "name": "บึงกาฬ เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3101",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "01",
+      "number": 1,
+      "name": "บุรีรัมย์ เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3110",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "10",
+      "number": 10,
+      "name": "บุรีรัมย์ เขต 10",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3102",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "02",
+      "number": 2,
+      "name": "บุรีรัมย์ เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3103",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "03",
+      "number": 3,
+      "name": "บุรีรัมย์ เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3104",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "04",
+      "number": 4,
+      "name": "บุรีรัมย์ เขต 4",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3105",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "05",
+      "number": 5,
+      "name": "บุรีรัมย์ เขต 5",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3106",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "06",
+      "number": 6,
+      "name": "บุรีรัมย์ เขต 6",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3107",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "07",
+      "number": 7,
+      "name": "บุรีรัมย์ เขต 7",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3108",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "08",
+      "number": 8,
+      "name": "บุรีรัมย์ เขต 8",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3109",
+      "provinceCode": "PROVINCE-31",
+      "areaCode": "09",
+      "number": 9,
+      "name": "บุรีรัมย์ เขต 9",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-1301",
+      "provinceCode": "PROVINCE-13",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ปทุมธานี เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1302",
+      "provinceCode": "PROVINCE-13",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ปทุมธานี เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1303",
+      "provinceCode": "PROVINCE-13",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ปทุมธานี เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1304",
+      "provinceCode": "PROVINCE-13",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ปทุมธานี เขต 4",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1305",
+      "provinceCode": "PROVINCE-13",
+      "areaCode": "05",
+      "number": 5,
+      "name": "ปทุมธานี เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-1306",
+      "provinceCode": "PROVINCE-13",
+      "areaCode": "06",
+      "number": 6,
+      "name": "ปทุมธานี เขต 6",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1307",
+      "provinceCode": "PROVINCE-13",
+      "areaCode": "07",
+      "number": 7,
+      "name": "ปทุมธานี เขต 7",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1308",
+      "provinceCode": "PROVINCE-13",
+      "areaCode": "08",
+      "number": 8,
+      "name": "ปทุมธานี เขต 8",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-7701",
+      "provinceCode": "PROVINCE-77",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ประจวบคีรีขันธ์ เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-7702",
+      "provinceCode": "PROVINCE-77",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ประจวบคีรีขันธ์ เขต 2",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-7703",
+      "provinceCode": "PROVINCE-77",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ประจวบคีรีขันธ์ เขต 3",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-2501",
+      "provinceCode": "PROVINCE-25",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ปราจีนบุรี เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-2502",
+      "provinceCode": "PROVINCE-25",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ปราจีนบุรี เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2503",
+      "provinceCode": "PROVINCE-25",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ปราจีนบุรี เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-9401",
+      "provinceCode": "PROVINCE-94",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ปัตตานี เขต 1",
+      "win66PartyCode": "PARTY-0033"
+    },
+    {
+      "code": "AREA-9402",
+      "provinceCode": "PROVINCE-94",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ปัตตานี เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-9403",
+      "provinceCode": "PROVINCE-94",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ปัตตานี เขต 3",
+      "win66PartyCode": "PARTY-0033"
+    },
+    {
+      "code": "AREA-9404",
+      "provinceCode": "PROVINCE-94",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ปัตตานี เขต 4",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-9405",
+      "provinceCode": "PROVINCE-94",
+      "areaCode": "05",
+      "number": 5,
+      "name": "ปัตตานี เขต 5",
+      "win66PartyCode": "PARTY-0033"
+    },
+    {
+      "code": "AREA-1401",
+      "provinceCode": "PROVINCE-14",
+      "areaCode": "01",
+      "number": 1,
+      "name": "พระนครศรีอยุธยา เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1402",
+      "provinceCode": "PROVINCE-14",
+      "areaCode": "02",
+      "number": 2,
+      "name": "พระนครศรีอยุธยา เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1403",
+      "provinceCode": "PROVINCE-14",
+      "areaCode": "03",
+      "number": 3,
+      "name": "พระนครศรีอยุธยา เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-1404",
+      "provinceCode": "PROVINCE-14",
+      "areaCode": "04",
+      "number": 4,
+      "name": "พระนครศรีอยุธยา เขต 4",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-1405",
+      "provinceCode": "PROVINCE-14",
+      "areaCode": "05",
+      "number": 5,
+      "name": "พระนครศรีอยุธยา เขต 5",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-5601",
+      "provinceCode": "PROVINCE-56",
+      "areaCode": "01",
+      "number": 1,
+      "name": "พะเยา เขต 1",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-5602",
+      "provinceCode": "PROVINCE-56",
+      "areaCode": "02",
+      "number": 2,
+      "name": "พะเยา เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-5603",
+      "provinceCode": "PROVINCE-56",
+      "areaCode": "03",
+      "number": 3,
+      "name": "พะเยา เขต 3",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-8201",
+      "provinceCode": "PROVINCE-82",
+      "areaCode": "01",
+      "number": 1,
+      "name": "พังงา เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-8202",
+      "provinceCode": "PROVINCE-82",
+      "areaCode": "02",
+      "number": 2,
+      "name": "พังงา เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-9301",
+      "provinceCode": "PROVINCE-93",
+      "areaCode": "01",
+      "number": 1,
+      "name": "พัทลุง เขต 1",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-9302",
+      "provinceCode": "PROVINCE-93",
+      "areaCode": "02",
+      "number": 2,
+      "name": "พัทลุง เขต 2",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-9303",
+      "provinceCode": "PROVINCE-93",
+      "areaCode": "03",
+      "number": 3,
+      "name": "พัทลุง เขต 3",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-6601",
+      "provinceCode": "PROVINCE-66",
+      "areaCode": "01",
+      "number": 1,
+      "name": "พิจิตร เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-6602",
+      "provinceCode": "PROVINCE-66",
+      "areaCode": "02",
+      "number": 2,
+      "name": "พิจิตร เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-6603",
+      "provinceCode": "PROVINCE-66",
+      "areaCode": "03",
+      "number": 3,
+      "name": "พิจิตร เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-6501",
+      "provinceCode": "PROVINCE-65",
+      "areaCode": "01",
+      "number": 1,
+      "name": "พิษณุโลก เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-6502",
+      "provinceCode": "PROVINCE-65",
+      "areaCode": "02",
+      "number": 2,
+      "name": "พิษณุโลก เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-6503",
+      "provinceCode": "PROVINCE-65",
+      "areaCode": "03",
+      "number": 3,
+      "name": "พิษณุโลก เขต 3",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-6504",
+      "provinceCode": "PROVINCE-65",
+      "areaCode": "04",
+      "number": 4,
+      "name": "พิษณุโลก เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-6505",
+      "provinceCode": "PROVINCE-65",
+      "areaCode": "05",
+      "number": 5,
+      "name": "พิษณุโลก เขต 5",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-7601",
+      "provinceCode": "PROVINCE-76",
+      "areaCode": "01",
+      "number": 1,
+      "name": "เพชรบุรี เขต 1",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-7602",
+      "provinceCode": "PROVINCE-76",
+      "areaCode": "02",
+      "number": 2,
+      "name": "เพชรบุรี เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-7603",
+      "provinceCode": "PROVINCE-76",
+      "areaCode": "03",
+      "number": 3,
+      "name": "เพชรบุรี เขต 3",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-6701",
+      "provinceCode": "PROVINCE-67",
+      "areaCode": "01",
+      "number": 1,
+      "name": "เพชรบูรณ์ เขต 1",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-6702",
+      "provinceCode": "PROVINCE-67",
+      "areaCode": "02",
+      "number": 2,
+      "name": "เพชรบูรณ์ เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-6703",
+      "provinceCode": "PROVINCE-67",
+      "areaCode": "03",
+      "number": 3,
+      "name": "เพชรบูรณ์ เขต 3",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-6704",
+      "provinceCode": "PROVINCE-67",
+      "areaCode": "04",
+      "number": 4,
+      "name": "เพชรบูรณ์ เขต 4",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-6705",
+      "provinceCode": "PROVINCE-67",
+      "areaCode": "05",
+      "number": 5,
+      "name": "เพชรบูรณ์ เขต 5",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-6706",
+      "provinceCode": "PROVINCE-67",
+      "areaCode": "06",
+      "number": 6,
+      "name": "เพชรบูรณ์ เขต 6",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-5401",
+      "provinceCode": "PROVINCE-54",
+      "areaCode": "01",
+      "number": 1,
+      "name": "แพร่ เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5402",
+      "provinceCode": "PROVINCE-54",
+      "areaCode": "02",
+      "number": 2,
+      "name": "แพร่ เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5403",
+      "provinceCode": "PROVINCE-54",
+      "areaCode": "03",
+      "number": 3,
+      "name": "แพร่ เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-8301",
+      "provinceCode": "PROVINCE-83",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ภูเก็ต เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-8302",
+      "provinceCode": "PROVINCE-83",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ภูเก็ต เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-8303",
+      "provinceCode": "PROVINCE-83",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ภูเก็ต เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-4401",
+      "provinceCode": "PROVINCE-44",
+      "areaCode": "01",
+      "number": 1,
+      "name": "มหาสารคาม เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4402",
+      "provinceCode": "PROVINCE-44",
+      "areaCode": "02",
+      "number": 2,
+      "name": "มหาสารคาม เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4403",
+      "provinceCode": "PROVINCE-44",
+      "areaCode": "03",
+      "number": 3,
+      "name": "มหาสารคาม เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-4404",
+      "provinceCode": "PROVINCE-44",
+      "areaCode": "04",
+      "number": 4,
+      "name": "มหาสารคาม เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4405",
+      "provinceCode": "PROVINCE-44",
+      "areaCode": "05",
+      "number": 5,
+      "name": "มหาสารคาม เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4406",
+      "provinceCode": "PROVINCE-44",
+      "areaCode": "06",
+      "number": 6,
+      "name": "มหาสารคาม เขต 6",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4901",
+      "provinceCode": "PROVINCE-49",
+      "areaCode": "01",
+      "number": 1,
+      "name": "มุกดาหาร เขต 1",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-4902",
+      "provinceCode": "PROVINCE-49",
+      "areaCode": "02",
+      "number": 2,
+      "name": "มุกดาหาร เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5801",
+      "provinceCode": "PROVINCE-58",
+      "areaCode": "01",
+      "number": 1,
+      "name": "แม่ฮ่องสอน เขต 1",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-5802",
+      "provinceCode": "PROVINCE-58",
+      "areaCode": "02",
+      "number": 2,
+      "name": "แม่ฮ่องสอน เขต 2",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-3501",
+      "provinceCode": "PROVINCE-35",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ยโสธร เขต 1",
+      "win66PartyCode": "PARTY-0048"
+    },
+    {
+      "code": "AREA-3502",
+      "provinceCode": "PROVINCE-35",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ยโสธร เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3503",
+      "provinceCode": "PROVINCE-35",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ยโสธร เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-9501",
+      "provinceCode": "PROVINCE-95",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ยะลา เขต 1",
+      "win66PartyCode": "PARTY-0033"
+    },
+    {
+      "code": "AREA-9502",
+      "provinceCode": "PROVINCE-95",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ยะลา เขต 2",
+      "win66PartyCode": "PARTY-0033"
+    },
+    {
+      "code": "AREA-9503",
+      "provinceCode": "PROVINCE-95",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ยะลา เขต 3",
+      "win66PartyCode": "PARTY-0033"
+    },
+    {
+      "code": "AREA-4501",
+      "provinceCode": "PROVINCE-45",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ร้อยเอ็ด เขต 1",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-4502",
+      "provinceCode": "PROVINCE-45",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ร้อยเอ็ด เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4503",
+      "provinceCode": "PROVINCE-45",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ร้อยเอ็ด เขต 3",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-4504",
+      "provinceCode": "PROVINCE-45",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ร้อยเอ็ด เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4505",
+      "provinceCode": "PROVINCE-45",
+      "areaCode": "05",
+      "number": 5,
+      "name": "ร้อยเอ็ด เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4506",
+      "provinceCode": "PROVINCE-45",
+      "areaCode": "06",
+      "number": 6,
+      "name": "ร้อยเอ็ด เขต 6",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4507",
+      "provinceCode": "PROVINCE-45",
+      "areaCode": "07",
+      "number": 7,
+      "name": "ร้อยเอ็ด เขต 7",
+      "win66PartyCode": "PARTY-0048"
+    },
+    {
+      "code": "AREA-4508",
+      "provinceCode": "PROVINCE-45",
+      "areaCode": "08",
+      "number": 8,
+      "name": "ร้อยเอ็ด เขต 8",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-8501",
+      "provinceCode": "PROVINCE-85",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ระนอง เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-2101",
+      "provinceCode": "PROVINCE-21",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ระยอง เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2102",
+      "provinceCode": "PROVINCE-21",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ระยอง เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2103",
+      "provinceCode": "PROVINCE-21",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ระยอง เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2104",
+      "provinceCode": "PROVINCE-21",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ระยอง เขต 4",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-2105",
+      "provinceCode": "PROVINCE-21",
+      "areaCode": "05",
+      "number": 5,
+      "name": "ระยอง เขต 5",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-7001",
+      "provinceCode": "PROVINCE-70",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ราชบุรี เขต 1",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-7002",
+      "provinceCode": "PROVINCE-70",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ราชบุรี เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-7003",
+      "provinceCode": "PROVINCE-70",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ราชบุรี เขต 3",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-7004",
+      "provinceCode": "PROVINCE-70",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ราชบุรี เขต 4",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-7005",
+      "provinceCode": "PROVINCE-70",
+      "areaCode": "05",
+      "number": 5,
+      "name": "ราชบุรี เขต 5",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-1601",
+      "provinceCode": "PROVINCE-16",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ลพบุรี เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-1602",
+      "provinceCode": "PROVINCE-16",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ลพบุรี เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1603",
+      "provinceCode": "PROVINCE-16",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ลพบุรี เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-1604",
+      "provinceCode": "PROVINCE-16",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ลพบุรี เขต 4",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-5201",
+      "provinceCode": "PROVINCE-52",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ลำปาง เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5202",
+      "provinceCode": "PROVINCE-52",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ลำปาง เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5203",
+      "provinceCode": "PROVINCE-52",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ลำปาง เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5204",
+      "provinceCode": "PROVINCE-52",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ลำปาง เขต 4",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5101",
+      "provinceCode": "PROVINCE-51",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ลำพูน เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-5102",
+      "provinceCode": "PROVINCE-51",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ลำพูน เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4201",
+      "provinceCode": "PROVINCE-42",
+      "areaCode": "01",
+      "number": 1,
+      "name": "เลย เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4202",
+      "provinceCode": "PROVINCE-42",
+      "areaCode": "02",
+      "number": 2,
+      "name": "เลย เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4203",
+      "provinceCode": "PROVINCE-42",
+      "areaCode": "03",
+      "number": 3,
+      "name": "เลย เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-4204",
+      "provinceCode": "PROVINCE-42",
+      "areaCode": "04",
+      "number": 4,
+      "name": "เลย เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3301",
+      "provinceCode": "PROVINCE-33",
+      "areaCode": "01",
+      "number": 1,
+      "name": "ศรีสะเกษ เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3302",
+      "provinceCode": "PROVINCE-33",
+      "areaCode": "02",
+      "number": 2,
+      "name": "ศรีสะเกษ เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3303",
+      "provinceCode": "PROVINCE-33",
+      "areaCode": "03",
+      "number": 3,
+      "name": "ศรีสะเกษ เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3304",
+      "provinceCode": "PROVINCE-33",
+      "areaCode": "04",
+      "number": 4,
+      "name": "ศรีสะเกษ เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3305",
+      "provinceCode": "PROVINCE-33",
+      "areaCode": "05",
+      "number": 5,
+      "name": "ศรีสะเกษ เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3306",
+      "provinceCode": "PROVINCE-33",
+      "areaCode": "06",
+      "number": 6,
+      "name": "ศรีสะเกษ เขต 6",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3307",
+      "provinceCode": "PROVINCE-33",
+      "areaCode": "07",
+      "number": 7,
+      "name": "ศรีสะเกษ เขต 7",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3308",
+      "provinceCode": "PROVINCE-33",
+      "areaCode": "08",
+      "number": 8,
+      "name": "ศรีสะเกษ เขต 8",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3309",
+      "provinceCode": "PROVINCE-33",
+      "areaCode": "09",
+      "number": 9,
+      "name": "ศรีสะเกษ เขต 9",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4701",
+      "provinceCode": "PROVINCE-47",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สกลนคร เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4702",
+      "provinceCode": "PROVINCE-47",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สกลนคร เขต 2",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-4703",
+      "provinceCode": "PROVINCE-47",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สกลนคร เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4704",
+      "provinceCode": "PROVINCE-47",
+      "areaCode": "04",
+      "number": 4,
+      "name": "สกลนคร เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4705",
+      "provinceCode": "PROVINCE-47",
+      "areaCode": "05",
+      "number": 5,
+      "name": "สกลนคร เขต 5",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-4706",
+      "provinceCode": "PROVINCE-47",
+      "areaCode": "06",
+      "number": 6,
+      "name": "สกลนคร เขต 6",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4707",
+      "provinceCode": "PROVINCE-47",
+      "areaCode": "07",
+      "number": 7,
+      "name": "สกลนคร เขต 7",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-9001",
+      "provinceCode": "PROVINCE-90",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สงขลา เขต 1",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-9002",
+      "provinceCode": "PROVINCE-90",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สงขลา เขต 2",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-9003",
+      "provinceCode": "PROVINCE-90",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สงขลา เขต 3",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-9004",
+      "provinceCode": "PROVINCE-90",
+      "areaCode": "04",
+      "number": 4,
+      "name": "สงขลา เขต 4",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-9005",
+      "provinceCode": "PROVINCE-90",
+      "areaCode": "05",
+      "number": 5,
+      "name": "สงขลา เขต 5",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-9006",
+      "provinceCode": "PROVINCE-90",
+      "areaCode": "06",
+      "number": 6,
+      "name": "สงขลา เขต 6",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-9007",
+      "provinceCode": "PROVINCE-90",
+      "areaCode": "07",
+      "number": 7,
+      "name": "สงขลา เขต 7",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-9008",
+      "provinceCode": "PROVINCE-90",
+      "areaCode": "08",
+      "number": 8,
+      "name": "สงขลา เขต 8",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-9009",
+      "provinceCode": "PROVINCE-90",
+      "areaCode": "09",
+      "number": 9,
+      "name": "สงขลา เขต 9",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-9101",
+      "provinceCode": "PROVINCE-91",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สตูล เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-9102",
+      "provinceCode": "PROVINCE-91",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สตูล เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-1101",
+      "provinceCode": "PROVINCE-11",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สมุทรปราการ เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1102",
+      "provinceCode": "PROVINCE-11",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สมุทรปราการ เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1103",
+      "provinceCode": "PROVINCE-11",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สมุทรปราการ เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1104",
+      "provinceCode": "PROVINCE-11",
+      "areaCode": "04",
+      "number": 4,
+      "name": "สมุทรปราการ เขต 4",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1105",
+      "provinceCode": "PROVINCE-11",
+      "areaCode": "05",
+      "number": 5,
+      "name": "สมุทรปราการ เขต 5",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1106",
+      "provinceCode": "PROVINCE-11",
+      "areaCode": "06",
+      "number": 6,
+      "name": "สมุทรปราการ เขต 6",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1107",
+      "provinceCode": "PROVINCE-11",
+      "areaCode": "07",
+      "number": 7,
+      "name": "สมุทรปราการ เขต 7",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1108",
+      "provinceCode": "PROVINCE-11",
+      "areaCode": "08",
+      "number": 8,
+      "name": "สมุทรปราการ เขต 8",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-7501",
+      "provinceCode": "PROVINCE-75",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สมุทรสงคราม เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-7401",
+      "provinceCode": "PROVINCE-74",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สมุทรสาคร เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-7402",
+      "provinceCode": "PROVINCE-74",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สมุทรสาคร เขต 2",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-7403",
+      "provinceCode": "PROVINCE-74",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สมุทรสาคร เขต 3",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-7404",
+      "provinceCode": "PROVINCE-74",
+      "areaCode": "04",
+      "number": 4,
+      "name": "สมุทรสาคร เขต 4",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-2701",
+      "provinceCode": "PROVINCE-27",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สระแก้ว เขต 1",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-2702",
+      "provinceCode": "PROVINCE-27",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สระแก้ว เขต 2",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-2703",
+      "provinceCode": "PROVINCE-27",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สระแก้ว เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-1901",
+      "provinceCode": "PROVINCE-19",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สระบุรี เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-1902",
+      "provinceCode": "PROVINCE-19",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สระบุรี เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-1903",
+      "provinceCode": "PROVINCE-19",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สระบุรี เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-1904",
+      "provinceCode": "PROVINCE-19",
+      "areaCode": "04",
+      "number": 4,
+      "name": "สระบุรี เขต 4",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-1701",
+      "provinceCode": "PROVINCE-17",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สิงห์บุรี เขต 1",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-6401",
+      "provinceCode": "PROVINCE-64",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สุโขทัย เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-6402",
+      "provinceCode": "PROVINCE-64",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สุโขทัย เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-6403",
+      "provinceCode": "PROVINCE-64",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สุโขทัย เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-6404",
+      "provinceCode": "PROVINCE-64",
+      "areaCode": "04",
+      "number": 4,
+      "name": "สุโขทัย เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-7201",
+      "provinceCode": "PROVINCE-72",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สุพรรณบุรี เขต 1",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-7202",
+      "provinceCode": "PROVINCE-72",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สุพรรณบุรี เขต 2",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-7203",
+      "provinceCode": "PROVINCE-72",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สุพรรณบุรี เขต 3",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-7204",
+      "provinceCode": "PROVINCE-72",
+      "areaCode": "04",
+      "number": 4,
+      "name": "สุพรรณบุรี เขต 4",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-7205",
+      "provinceCode": "PROVINCE-72",
+      "areaCode": "05",
+      "number": 5,
+      "name": "สุพรรณบุรี เขต 5",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-8401",
+      "provinceCode": "PROVINCE-84",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สุราษฎร์ธานี เขต 1",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-8402",
+      "provinceCode": "PROVINCE-84",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สุราษฎร์ธานี เขต 2",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-8403",
+      "provinceCode": "PROVINCE-84",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สุราษฎร์ธานี เขต 3",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-8404",
+      "provinceCode": "PROVINCE-84",
+      "areaCode": "04",
+      "number": 4,
+      "name": "สุราษฎร์ธานี เขต 4",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-8405",
+      "provinceCode": "PROVINCE-84",
+      "areaCode": "05",
+      "number": 5,
+      "name": "สุราษฎร์ธานี เขต 5",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-8406",
+      "provinceCode": "PROVINCE-84",
+      "areaCode": "06",
+      "number": 6,
+      "name": "สุราษฎร์ธานี เขต 6",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-8407",
+      "provinceCode": "PROVINCE-84",
+      "areaCode": "07",
+      "number": 7,
+      "name": "สุราษฎร์ธานี เขต 7",
+      "win66PartyCode": "PARTY-0006"
+    },
+    {
+      "code": "AREA-3201",
+      "provinceCode": "PROVINCE-32",
+      "areaCode": "01",
+      "number": 1,
+      "name": "สุรินทร์ เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3202",
+      "provinceCode": "PROVINCE-32",
+      "areaCode": "02",
+      "number": 2,
+      "name": "สุรินทร์ เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3203",
+      "provinceCode": "PROVINCE-32",
+      "areaCode": "03",
+      "number": 3,
+      "name": "สุรินทร์ เขต 3",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3204",
+      "provinceCode": "PROVINCE-32",
+      "areaCode": "04",
+      "number": 4,
+      "name": "สุรินทร์ เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3205",
+      "provinceCode": "PROVINCE-32",
+      "areaCode": "05",
+      "number": 5,
+      "name": "สุรินทร์ เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3206",
+      "provinceCode": "PROVINCE-32",
+      "areaCode": "06",
+      "number": 6,
+      "name": "สุรินทร์ เขต 6",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3207",
+      "provinceCode": "PROVINCE-32",
+      "areaCode": "07",
+      "number": 7,
+      "name": "สุรินทร์ เขต 7",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3208",
+      "provinceCode": "PROVINCE-32",
+      "areaCode": "08",
+      "number": 8,
+      "name": "สุรินทร์ เขต 8",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-4301",
+      "provinceCode": "PROVINCE-43",
+      "areaCode": "01",
+      "number": 1,
+      "name": "หนองคาย เขต 1",
+      "win66PartyCode": "PARTY-0043"
+    },
+    {
+      "code": "AREA-4302",
+      "provinceCode": "PROVINCE-43",
+      "areaCode": "02",
+      "number": 2,
+      "name": "หนองคาย เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4303",
+      "provinceCode": "PROVINCE-43",
+      "areaCode": "03",
+      "number": 3,
+      "name": "หนองคาย เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3901",
+      "provinceCode": "PROVINCE-39",
+      "areaCode": "01",
+      "number": 1,
+      "name": "หนองบัวลำภู เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3902",
+      "provinceCode": "PROVINCE-39",
+      "areaCode": "02",
+      "number": 2,
+      "name": "หนองบัวลำภู เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3903",
+      "provinceCode": "PROVINCE-39",
+      "areaCode": "03",
+      "number": 3,
+      "name": "หนองบัวลำภู เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-1501",
+      "provinceCode": "PROVINCE-15",
+      "areaCode": "01",
+      "number": 1,
+      "name": "อ่างทอง เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-1502",
+      "provinceCode": "PROVINCE-15",
+      "areaCode": "02",
+      "number": 2,
+      "name": "อ่างทอง เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3701",
+      "provinceCode": "PROVINCE-37",
+      "areaCode": "01",
+      "number": 1,
+      "name": "อำนาจเจริญ เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3702",
+      "provinceCode": "PROVINCE-37",
+      "areaCode": "02",
+      "number": 2,
+      "name": "อำนาจเจริญ เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-4101",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "01",
+      "number": 1,
+      "name": "อุดรธานี เขต 1",
+      "win66PartyCode": "PARTY-0046"
+    },
+    {
+      "code": "AREA-4110",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "10",
+      "number": 10,
+      "name": "อุดรธานี เขต 10",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4102",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "02",
+      "number": 2,
+      "name": "อุดรธานี เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4103",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "03",
+      "number": 3,
+      "name": "อุดรธานี เขต 3",
+      "win66PartyCode": "PARTY-0048"
+    },
+    {
+      "code": "AREA-4104",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "04",
+      "number": 4,
+      "name": "อุดรธานี เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4105",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "05",
+      "number": 5,
+      "name": "อุดรธานี เขต 5",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4106",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "06",
+      "number": 6,
+      "name": "อุดรธานี เขต 6",
+      "win66PartyCode": "PARTY-0048"
+    },
+    {
+      "code": "AREA-4107",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "07",
+      "number": 7,
+      "name": "อุดรธานี เขต 7",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4108",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "08",
+      "number": 8,
+      "name": "อุดรธานี เขต 8",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-4109",
+      "provinceCode": "PROVINCE-41",
+      "areaCode": "09",
+      "number": 9,
+      "name": "อุดรธานี เขต 9",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5301",
+      "provinceCode": "PROVINCE-53",
+      "areaCode": "01",
+      "number": 1,
+      "name": "อุตรดิตถ์ เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5302",
+      "provinceCode": "PROVINCE-53",
+      "areaCode": "02",
+      "number": 2,
+      "name": "อุตรดิตถ์ เขต 2",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-5303",
+      "provinceCode": "PROVINCE-53",
+      "areaCode": "03",
+      "number": 3,
+      "name": "อุตรดิตถ์ เขต 3",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-6101",
+      "provinceCode": "PROVINCE-61",
+      "areaCode": "01",
+      "number": 1,
+      "name": "อุทัยธานี เขต 1",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-6102",
+      "provinceCode": "PROVINCE-61",
+      "areaCode": "02",
+      "number": 2,
+      "name": "อุทัยธานี เขต 2",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3401",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "01",
+      "number": 1,
+      "name": "อุบลราชธานี เขต 1",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3410",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "10",
+      "number": 10,
+      "name": "อุบลราชธานี เขต 10",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-3411",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "11",
+      "number": 11,
+      "name": "อุบลราชธานี เขต 11",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3402",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "02",
+      "number": 2,
+      "name": "อุบลราชธานี เขต 2",
+      "win66PartyCode": "PARTY-0027"
+    },
+    {
+      "code": "AREA-3403",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "03",
+      "number": 3,
+      "name": "อุบลราชธานี เขต 3",
+      "win66PartyCode": ""
+    },
+    {
+      "code": "AREA-3404",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "04",
+      "number": 4,
+      "name": "อุบลราชธานี เขต 4",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3405",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "05",
+      "number": 5,
+      "name": "อุบลราชธานี เขต 5",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3406",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "06",
+      "number": 6,
+      "name": "อุบลราชธานี เขต 6",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3407",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "07",
+      "number": 7,
+      "name": "อุบลราชธานี เขต 7",
+      "win66PartyCode": "PARTY-0009"
+    },
+    {
+      "code": "AREA-3408",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "08",
+      "number": 8,
+      "name": "อุบลราชธานี เขต 8",
+      "win66PartyCode": "PARTY-0037"
+    },
+    {
+      "code": "AREA-3409",
+      "provinceCode": "PROVINCE-34",
+      "areaCode": "09",
+      "number": 9,
+      "name": "อุบลราชธานี เขต 9",
+      "win66PartyCode": "PARTY-0048"
+    }
+  ],
+  "resultSourceTypeInfos": [
+    {
+      "code": "latest",
+      "name": "ล่าสุด",
+      "description": "เลือกแหล่งข้อมูลล่าสุดอัตโนมัติ"
+    },
+    {
+      "code": "volunteer",
+      "name": "อาสาสมัคร",
+      "description": "ข้อมูลจากอาสาสมัครรายงานผล"
+    },
+    {
+      "code": "ect-unofficial",
+      "name": "กกต. (อย่างไม่เป็นทางการ)",
+      "description": "ผลนับคะแนนอย่างไม่เป็นทางการจากสำนักงานคณะกรรมการการเลือกตั้ง"
+    },
+    {
+      "code": "ect-official",
+      "name": "กกต. (เป็นทางการ)",
+      "description": "ผลนับคะแนนอย่างเป็นทางการจากสำนักงานคณะกรรมการการเลือกตั้ง"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-02-09T08:26:08.910621+00:00",
+  "sections": {
+    "overview": "section_overview.json",
+    "gap": "section_gap.json",
+    "alignment": "section_alignment.json",
+    "targeting": "section_targeting.json",
+    "robustness": "section_robustness.json",
+    "appendix": "section_appendix.json"
+  },
+  "counts": {
+    "rows66": 1912,
+    "rows69": 24000,
+    "comparativeRows": 1588,
+    "areas69": 400
+  },
+  "thresholds": {
+    "winner_gap_top3pct": 0.41819896072036655,
+    "residual_abs_z_top3pct": 1.9935071685024797
+  },
+  "hypothesis_source": "hypothesis.md",
+  "dataSha": "4c09f9603b8071429df81626c5f4a79061a2362a482f471df79c6dc677fbace2"
+}

@@ -1,0 +1,361 @@
+{
+  "counts": {
+    "areas": 400,
+    "rows": 24000,
+    "anomaly_rows": 720,
+    "winner_rows": 400
+  },
+  "thresholds": {
+    "residual_abs_z_top3pct": 1.9935071685024797,
+    "winner_gap_top3pct": 0.41819896072036655
+  },
+  "top_party_by_anomaly_ratio": [
+    {
+      "party_code": "PARTY-0001",
+      "party_no": 1,
+      "party_name": "ไทยทรัพย์ทวี",
+      "rows": 400,
+      "mean_gap_raw": -0.008330327633040325,
+      "sum_gap_raw": -3.33213105321613,
+      "anomaly_rows": 19,
+      "winner_count": 0,
+      "anomaly_ratio": 0.0475
+    },
+    {
+      "party_code": "PARTY-0003",
+      "party_no": 3,
+      "party_name": "ใหม่",
+      "rows": 400,
+      "mean_gap_raw": -0.008509912350498772,
+      "sum_gap_raw": -3.403964940199509,
+      "anomaly_rows": 19,
+      "winner_count": 0,
+      "anomaly_ratio": 0.0475
+    },
+    {
+      "party_code": "PARTY-0007",
+      "party_no": 7,
+      "party_name": "พลวัต",
+      "rows": 400,
+      "mean_gap_raw": -0.002279472963197534,
+      "sum_gap_raw": -0.9117891852790136,
+      "anomaly_rows": 19,
+      "winner_count": 0,
+      "anomaly_ratio": 0.0475
+    },
+    {
+      "party_code": "PARTY-0010",
+      "party_no": 10,
+      "party_name": "ทางเลือกใหม่",
+      "rows": 400,
+      "mean_gap_raw": -0.003920343452117104,
+      "sum_gap_raw": -1.5681373808468417,
+      "anomaly_rows": 19,
+      "winner_count": 0,
+      "anomaly_ratio": 0.0475
+    },
+    {
+      "party_code": "PARTY-0029",
+      "party_no": 29,
+      "party_name": "ไทยภักดี",
+      "rows": 400,
+      "mean_gap_raw": -0.0055453610024845425,
+      "sum_gap_raw": -2.218144400993817,
+      "anomaly_rows": 19,
+      "winner_count": 0,
+      "anomaly_ratio": 0.0475
+    },
+    {
+      "party_code": "PARTY-0044",
+      "party_no": 44,
+      "party_name": "โอกาสใหม่",
+      "rows": 400,
+      "mean_gap_raw": 0.0027136230569817597,
+      "sum_gap_raw": 1.085449222792704,
+      "anomaly_rows": 19,
+      "winner_count": 1,
+      "anomaly_ratio": 0.0475
+    },
+    {
+      "party_code": "PARTY-0030",
+      "party_no": 30,
+      "party_name": "แรงงานสร้างชาติ",
+      "rows": 400,
+      "mean_gap_raw": -0.0012697117988741213,
+      "sum_gap_raw": -0.5078847195496485,
+      "anomaly_rows": 18,
+      "winner_count": 0,
+      "anomaly_ratio": 0.045
+    },
+    {
+      "party_code": "PARTY-0008",
+      "party_no": 8,
+      "party_name": "ประชาธิปไตยใหม่",
+      "rows": 400,
+      "mean_gap_raw": -0.006197433785059275,
+      "sum_gap_raw": -2.47897351402371,
+      "anomaly_rows": 17,
+      "winner_count": 0,
+      "anomaly_ratio": 0.0425
+    },
+    {
+      "party_code": "PARTY-0043",
+      "party_no": 43,
+      "party_name": "พลังประชารัฐ",
+      "rows": 400,
+      "mean_gap_raw": 0.00960674388918231,
+      "sum_gap_raw": 3.8426975556729244,
+      "anomaly_rows": 17,
+      "winner_count": 4,
+      "anomaly_ratio": 0.0425
+    },
+    {
+      "party_code": "PARTY-0056",
+      "party_no": 56,
+      "party_name": "เพื่อบ้านเมือง",
+      "rows": 400,
+      "mean_gap_raw": -0.0003465715205023942,
+      "sum_gap_raw": -0.13862860820095768,
+      "anomaly_rows": 17,
+      "winner_count": 0,
+      "anomaly_ratio": 0.0425
+    },
+    {
+      "party_code": "PARTY-0024",
+      "party_no": 24,
+      "party_name": "วิชชั่นใหม่",
+      "rows": 400,
+      "mean_gap_raw": -0.0009351756700258681,
+      "sum_gap_raw": -0.37407026801034726,
+      "anomaly_rows": 16,
+      "winner_count": 0,
+      "anomaly_ratio": 0.04
+    },
+    {
+      "party_code": "PARTY-0031",
+      "party_no": 31,
+      "party_name": "ประชากรไทย",
+      "rows": 400,
+      "mean_gap_raw": -0.0013451270982118922,
+      "sum_gap_raw": -0.5380508392847568,
+      "anomaly_rows": 16,
+      "winner_count": 0,
+      "anomaly_ratio": 0.04
+    },
+    {
+      "party_code": "PARTY-0048",
+      "party_no": 48,
+      "party_name": "ไทยสร้างไทย",
+      "rows": 400,
+      "mean_gap_raw": -0.0013272760817158375,
+      "sum_gap_raw": -0.530910432686335,
+      "anomaly_rows": 16,
+      "winner_count": 1,
+      "anomaly_ratio": 0.04
+    },
+    {
+      "party_code": "PARTY-0019",
+      "party_no": 19,
+      "party_name": "สังคมประชาธิปไตยไทย",
+      "rows": 400,
+      "mean_gap_raw": -0.0005095519925148643,
+      "sum_gap_raw": -0.2038207970059457,
+      "anomaly_rows": 15,
+      "winner_count": 0,
+      "anomaly_ratio": 0.0375
+    },
+    {
+      "party_code": "PARTY-0035",
+      "party_no": 35,
+      "party_name": "รักชาติ",
+      "rows": 400,
+      "mean_gap_raw": -0.0013437470853941522,
+      "sum_gap_raw": -0.5374988341576609,
+      "anomaly_rows": 15,
+      "winner_count": 0,
+      "anomaly_ratio": 0.0375
+    },
+    {
+      "party_code": "PARTY-0002",
+      "party_no": 2,
+      "party_name": "เพื่อชาติไทย",
+      "rows": 400,
+      "mean_gap_raw": -0.018836869937276412,
+      "sum_gap_raw": -7.534747974910565,
+      "anomaly_rows": 14,
+      "winner_count": 0,
+      "anomaly_ratio": 0.035
+    },
+    {
+      "party_code": "PARTY-0004",
+      "party_no": 4,
+      "party_name": "มิติใหม่",
+      "rows": 400,
+      "mean_gap_raw": -0.00671218773359464,
+      "sum_gap_raw": -2.684875093437856,
+      "anomaly_rows": 14,
+      "winner_count": 0,
+      "anomaly_ratio": 0.035
+    },
+    {
+      "party_code": "PARTY-0012",
+      "party_no": 12,
+      "party_name": "เสรีรวมไทย",
+      "rows": 400,
+      "mean_gap_raw": -0.004552624353769066,
+      "sum_gap_raw": -1.8210497415076263,
+      "anomaly_rows": 14,
+      "winner_count": 0,
+      "anomaly_ratio": 0.035
+    },
+    {
+      "party_code": "PARTY-0015",
+      "party_no": 15,
+      "party_name": "อนาคตไทย",
+      "rows": 400,
+      "mean_gap_raw": -0.0007461790090852699,
+      "sum_gap_raw": -0.29847160363410796,
+      "anomaly_rows": 14,
+      "winner_count": 0,
+      "anomaly_ratio": 0.035
+    },
+    {
+      "party_code": "PARTY-0023",
+      "party_no": 23,
+      "party_name": "ปวงชนไทย",
+      "rows": 400,
+      "mean_gap_raw": 0.0005682288330828779,
+      "sum_gap_raw": 0.22729153323315118,
+      "anomaly_rows": 14,
+      "winner_count": 0,
+      "anomaly_ratio": 0.035
+    }
+  ],
+  "winner_gap_watchlist": [
+    {
+      "area_code": "AREA-6003",
+      "area_name": "นครสวรรค์ เขต 3",
+      "province_name": "นครสวรรค์",
+      "winner_party_code": "PARTY-0042",
+      "winner_gap": 0.49738510223410803,
+      "winner_constituency_share": 0.5368922626291797,
+      "winner_partylist_share": 0.03950716039507161,
+      "is_same_as_win66": false
+    },
+    {
+      "area_code": "AREA-3411",
+      "area_name": "อุบลราชธานี เขต 11",
+      "province_name": "อุบลราชธานี",
+      "winner_party_code": "PARTY-0037",
+      "winner_gap": 0.4873252553510765,
+      "winner_constituency_share": 0.6819100349254185,
+      "winner_partylist_share": 0.19458477957434195,
+      "is_same_as_win66": true
+    },
+    {
+      "area_code": "AREA-9005",
+      "area_name": "สงขลา เขต 5",
+      "province_name": "สงขลา",
+      "winner_party_code": "PARTY-0042",
+      "winner_gap": 0.4655644358937423,
+      "winner_constituency_share": 0.4941102374602675,
+      "winner_partylist_share": 0.028545801566525173,
+      "is_same_as_win66": false
+    },
+    {
+      "area_code": "AREA-5801",
+      "area_name": "แม่ฮ่องสอน เขต 1",
+      "province_name": "แม่ฮ่องสอน",
+      "winner_party_code": "PARTY-0042",
+      "winner_gap": 0.4637541049518571,
+      "winner_constituency_share": 0.5277398480170981,
+      "winner_partylist_share": 0.06398574306524098,
+      "is_same_as_win66": false
+    },
+    {
+      "area_code": "AREA-1904",
+      "area_name": "สระบุรี เขต 4",
+      "province_name": "สระบุรี",
+      "winner_party_code": "PARTY-0042",
+      "winner_gap": 0.4593583883183963,
+      "winner_constituency_share": 0.48178587068324624,
+      "winner_partylist_share": 0.022427482364849902,
+      "is_same_as_win66": false
+    },
+    {
+      "area_code": "AREA-9102",
+      "area_name": "สตูล เขต 2",
+      "province_name": "สตูล",
+      "winner_party_code": "PARTY-0037",
+      "winner_gap": 0.4530916107953167,
+      "winner_constituency_share": 0.5745303011778131,
+      "winner_partylist_share": 0.12143869038249645,
+      "is_same_as_win66": true
+    },
+    {
+      "area_code": "AREA-7603",
+      "area_name": "เพชรบุรี เขต 3",
+      "province_name": "เพชรบุรี",
+      "winner_party_code": "PARTY-0037",
+      "winner_gap": 0.44316506430187663,
+      "winner_constituency_share": 0.6987044229024597,
+      "winner_partylist_share": 0.2555393586005831,
+      "is_same_as_win66": false
+    },
+    {
+      "area_code": "AREA-3607",
+      "area_name": "ชัยภูมิ เขต 7",
+      "province_name": "ชัยภูมิ",
+      "winner_party_code": "PARTY-0042",
+      "winner_gap": 0.44256750427530833,
+      "winner_constituency_share": 0.5018906489524783,
+      "winner_partylist_share": 0.0593231446771699,
+      "is_same_as_win66": false
+    },
+    {
+      "area_code": "AREA-7302",
+      "area_name": "นครปฐม เขต 2",
+      "province_name": "นครปฐม",
+      "winner_party_code": "PARTY-0042",
+      "winner_gap": 0.4371432895159109,
+      "winner_constituency_share": 0.4641565239594859,
+      "winner_partylist_share": 0.027013234443575,
+      "is_same_as_win66": false
+    },
+    {
+      "area_code": "AREA-2403",
+      "area_name": "ฉะเชิงเทรา เขต 3",
+      "province_name": "ฉะเชิงเทรา",
+      "winner_party_code": "PARTY-0042",
+      "winner_gap": 0.43057510285820816,
+      "winner_constituency_share": 0.5047602597059511,
+      "winner_partylist_share": 0.07418515684774292,
+      "is_same_as_win66": false
+    },
+    {
+      "area_code": "AREA-7003",
+      "area_name": "ราชบุรี เขต 3",
+      "province_name": "ราชบุรี",
+      "winner_party_code": "PARTY-0042",
+      "winner_gap": 0.4290496384674606,
+      "winner_constituency_share": 0.4723956606186934,
+      "winner_partylist_share": 0.04334602215123286,
+      "is_same_as_win66": false
+    },
+    {
+      "area_code": "AREA-3603",
+      "area_name": "ชัยภูมิ เขต 3",
+      "province_name": "ชัยภูมิ",
+      "winner_party_code": "PARTY-0037",
+      "winner_gap": 0.41878304781086656,
+      "winner_constituency_share": 0.5896401076214071,
+      "winner_partylist_share": 0.1708570598105405,
+      "is_same_as_win66": true
+    }
+  ],
+  "notes": [
+    "gap_raw = constituency_share - partylist_share",
+    "residual_zscore computed within (province, party)",
+    "anomaly uses top 3% absolute residual z-score"
+  ]
+}

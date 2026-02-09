@@ -1,0 +1,512 @@
+{
+  "lastUpdatedAt": "2026-02-09T04:31:47.310Z",
+  "lastUpdatedAtFromOrigin": "2026-02-09T04:28:44.320Z",
+  "voteProgressExists": true,
+  "voteProgressPercent": 94,
+  "data": [
+    {
+      "partyCode": "PARTY-0037",
+      "constituencySeats": 174,
+      "partylistSeats": 19,
+      "totalSeats": 193,
+      "constituencyVotes": 10434756,
+      "partyListVotes": 5941805
+    },
+    {
+      "partyCode": "PARTY-0046",
+      "constituencySeats": 87,
+      "partylistSeats": 31,
+      "totalSeats": 118,
+      "constituencyVotes": 8437906,
+      "partyListVotes": 9747116
+    },
+    {
+      "partyCode": "PARTY-0009",
+      "constituencySeats": 58,
+      "partylistSeats": 16,
+      "totalSeats": 74,
+      "constituencyVotes": 6031405,
+      "partyListVotes": 5134599
+    },
+    {
+      "partyCode": "PARTY-0042",
+      "constituencySeats": 56,
+      "partylistSeats": 2,
+      "totalSeats": 58,
+      "constituencyVotes": 4018131,
+      "partyListVotes": 605405
+    },
+    {
+      "partyCode": "PARTY-0027",
+      "constituencySeats": 10,
+      "partylistSeats": 12,
+      "totalSeats": 22,
+      "constituencyVotes": 2089723,
+      "partyListVotes": 3635139
+    },
+    {
+      "partyCode": "PARTY-0021",
+      "constituencySeats": 5,
+      "partylistSeats": 1,
+      "totalSeats": 6,
+      "constituencyVotes": 352902,
+      "partyListVotes": 152373
+    },
+    {
+      "partyCode": "PARTY-0033",
+      "constituencySeats": 4,
+      "partylistSeats": 1,
+      "totalSeats": 5,
+      "constituencyVotes": 299666,
+      "partyListVotes": 401397
+    },
+    {
+      "partyCode": "PARTY-0043",
+      "constituencySeats": 4,
+      "partylistSeats": 1,
+      "totalSeats": 5,
+      "constituencyVotes": 483474,
+      "partyListVotes": 129033
+    },
+    {
+      "partyCode": "PARTY-0011",
+      "constituencySeats": 0,
+      "partylistSeats": 3,
+      "totalSeats": 3,
+      "constituencyVotes": 389332,
+      "partyListVotes": 1042928
+    },
+    {
+      "partyCode": "PARTY-0006",
+      "constituencySeats": 0,
+      "partylistSeats": 2,
+      "totalSeats": 2,
+      "constituencyVotes": 306755,
+      "partyListVotes": 703381
+    },
+    {
+      "partyCode": "PARTY-0002",
+      "constituencySeats": 0,
+      "partylistSeats": 2,
+      "totalSeats": 2,
+      "constituencyVotes": 480,
+      "partyListVotes": 627376
+    },
+    {
+      "partyCode": "PARTY-0048",
+      "constituencySeats": 1,
+      "partylistSeats": 1,
+      "totalSeats": 2,
+      "constituencyVotes": 140358,
+      "partyListVotes": 184670
+    },
+    {
+      "partyCode": "PARTY-0005",
+      "constituencySeats": 0,
+      "partylistSeats": 1,
+      "totalSeats": 1,
+      "constituencyVotes": 2791,
+      "partyListVotes": 402183
+    },
+    {
+      "partyCode": "PARTY-0003",
+      "constituencySeats": 0,
+      "partylistSeats": 1,
+      "totalSeats": 1,
+      "constituencyVotes": 799,
+      "partyListVotes": 293827
+    },
+    {
+      "partyCode": "PARTY-0001",
+      "constituencySeats": 0,
+      "partylistSeats": 1,
+      "totalSeats": 1,
+      "constituencyVotes": 2466,
+      "partyListVotes": 284090
+    },
+    {
+      "partyCode": "PARTY-0008",
+      "constituencySeats": 0,
+      "partylistSeats": 1,
+      "totalSeats": 1,
+      "constituencyVotes": 22422,
+      "partyListVotes": 237102
+    },
+    {
+      "partyCode": "PARTY-0029",
+      "constituencySeats": 0,
+      "partylistSeats": 1,
+      "totalSeats": 1,
+      "constituencyVotes": 33359,
+      "partyListVotes": 225274
+    },
+    {
+      "partyCode": "PARTY-0044",
+      "constituencySeats": 1,
+      "partylistSeats": 0,
+      "totalSeats": 1,
+      "constituencyVotes": 182435,
+      "partyListVotes": 74496
+    },
+    {
+      "partyCode": "PARTY-0004",
+      "constituencySeats": 0,
+      "partylistSeats": 1,
+      "totalSeats": 1,
+      "constituencyVotes": 1269,
+      "partyListVotes": 229899
+    },
+    {
+      "partyCode": "PARTY-0012",
+      "constituencySeats": 0,
+      "partylistSeats": 1,
+      "totalSeats": 1,
+      "constituencyVotes": 15695,
+      "partyListVotes": 169667
+    },
+    {
+      "partyCode": "PARTY-0013",
+      "constituencySeats": 0,
+      "partylistSeats": 1,
+      "totalSeats": 1,
+      "constituencyVotes": 1732,
+      "partyListVotes": 181790
+    },
+    {
+      "partyCode": "PARTY-0010",
+      "constituencySeats": 0,
+      "partylistSeats": 1,
+      "totalSeats": 1,
+      "constituencyVotes": 19289,
+      "partyListVotes": 156283
+    },
+    {
+      "partyCode": "PARTY-0049",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 104085,
+      "partyListVotes": 98871
+    },
+    {
+      "partyCode": "PARTY-0007",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 31659,
+      "partyListVotes": 107865
+    },
+    {
+      "partyCode": "PARTY-0031",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 22190,
+      "partyListVotes": 65514
+    },
+    {
+      "partyCode": "PARTY-0038",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 81,
+      "partyListVotes": 83760
+    },
+    {
+      "partyCode": "PARTY-0035",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 15842,
+      "partyListVotes": 63487
+    },
+    {
+      "partyCode": "PARTY-0023",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 47946,
+      "partyListVotes": 26384
+    },
+    {
+      "partyCode": "PARTY-0016",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 280,
+      "partyListVotes": 66823
+    },
+    {
+      "partyCode": "PARTY-0036",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 5857,
+      "partyListVotes": 56278
+    },
+    {
+      "partyCode": "PARTY-0030",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 8407,
+      "partyListVotes": 50667
+    },
+    {
+      "partyCode": "PARTY-0047",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 420,
+      "partyListVotes": 56918
+    },
+    {
+      "partyCode": "PARTY-0034",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 246,
+      "partyListVotes": 55625
+    },
+    {
+      "partyCode": "PARTY-0032",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 178,
+      "partyListVotes": 52169
+    },
+    {
+      "partyCode": "PARTY-0024",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 10149,
+      "partyListVotes": 40405
+    },
+    {
+      "partyCode": "PARTY-0017",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 1421,
+      "partyListVotes": 48579
+    },
+    {
+      "partyCode": "PARTY-0028",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 1805,
+      "partyListVotes": 46592
+    },
+    {
+      "partyCode": "PARTY-0014",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 1575,
+      "partyListVotes": 44375
+    },
+    {
+      "partyCode": "PARTY-0045",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 6802,
+      "partyListVotes": 32051
+    },
+    {
+      "partyCode": "PARTY-0026",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 350,
+      "partyListVotes": 33783
+    },
+    {
+      "partyCode": "PARTY-0056",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 10984,
+      "partyListVotes": 23033
+    },
+    {
+      "partyCode": "PARTY-0015",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 2254,
+      "partyListVotes": 27598
+    },
+    {
+      "partyCode": "PARTY-0039",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 1065,
+      "partyListVotes": 22138
+    },
+    {
+      "partyCode": "PARTY-0057",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 1513,
+      "partyListVotes": 20757
+    },
+    {
+      "partyCode": "PARTY-0040",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 1524,
+      "partyListVotes": 20481
+    },
+    {
+      "partyCode": "PARTY-0022",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 4923,
+      "partyListVotes": 16370
+    },
+    {
+      "partyCode": "PARTY-0019",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 835,
+      "partyListVotes": 18315
+    },
+    {
+      "partyCode": "PARTY-0051",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 955,
+      "partyListVotes": 16013
+    },
+    {
+      "partyCode": "PARTY-0020",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 1888,
+      "partyListVotes": 12231
+    },
+    {
+      "partyCode": "PARTY-0025",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 362,
+      "partyListVotes": 13037
+    },
+    {
+      "partyCode": "PARTY-0041",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 143,
+      "partyListVotes": 12605
+    },
+    {
+      "partyCode": "PARTY-0018",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 654,
+      "partyListVotes": 10827
+    },
+    {
+      "partyCode": "PARTY-0054",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 195,
+      "partyListVotes": 8755
+    },
+    {
+      "partyCode": "PARTY-0052",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 468,
+      "partyListVotes": 8350
+    },
+    {
+      "partyCode": "PARTY-0055",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 94,
+      "partyListVotes": 7536
+    },
+    {
+      "partyCode": "PARTY-0053",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 1433,
+      "partyListVotes": 5212
+    },
+    {
+      "partyCode": "PARTY-0050",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 174,
+      "partyListVotes": 5288
+    },
+    {
+      "partyCode": "PARTY-0060",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 1471,
+      "partyListVotes": 0
+    },
+    {
+      "partyCode": "PARTY-0058",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 189,
+      "partyListVotes": 0
+    },
+    {
+      "partyCode": "PARTY-0059",
+      "constituencySeats": 0,
+      "partylistSeats": 0,
+      "totalSeats": 0,
+      "constituencyVotes": 113,
+      "partyListVotes": 0
+    }
+  ],
+  "statisticsConstitution": {
+    "total": 36223467,
+    "percent": 100,
+    "voteBreakdownByType": {
+      "goodVoteTotal": 33557675,
+      "goodVotePercent": 92.64,
+      "badVoteTotal": 1228683,
+      "badVotePercent": 3.39,
+      "noVoteTotal": 1437109,
+      "noVotePercent": 3.97
+    }
+  },
+  "statisticsPartyList": {
+    "total": 34394820,
+    "percent": 100,
+    "voteBreakdownByType": {
+      "goodVoteTotal": 31838525,
+      "goodVotePercent": 92.57,
+      "badVoteTotal": 1550185,
+      "badVotePercent": 4.51,
+      "noVoteTotal": 1006110,
+      "noVotePercent": 2.93
+    }
+  }
+}

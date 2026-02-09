@@ -1,0 +1,15 @@
+{
+  "unmapped_party66_top": [
+    {
+      "party_name_66": "ก้าวไกล",
+      "rows": 316
+    }
+  ],
+  "district_low_confidence_rows_66": 9,
+  "district_low_confidence_ratio_66": 0.004707112970711297,
+  "notes": [
+    "district mapping uses province_name_norm + district_no",
+    "party mapping priority: exact name -> crosswalk -> unmapped",
+    "comparative rows include only mapped district+party"
+  ]
+}

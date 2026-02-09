@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>รายงานวิเคราะห์เลือกตั้งปี 69</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/research.css" />
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" defer></script>
+    <script src="assets/research.js" defer></script>
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__kicker">รายงานวิจัยเชิงข้อมูล</p>
+        <h1>วิเคราะห์การเลือกตั้งปี 69 (เริ่มรอบแรก)</h1>
+        <p class="hero__desc">
+          เวอร์ชันนี้เริ่มจากภาพรวมและสมมติฐานข้อแรกก่อน โดยคงดีไซน์เดิมและปรับเนื้อหาให้ค่อยๆอ่านง่ายสำหรับคนทั่วไป
+        </p>
+        <div class="hero__meta">
+          <span>เวลาสร้างข้อมูล: <b id="meta-time">-</b></span>
+          <span>จำนวนเขต: <b id="meta-areas">-</b></span>
+          <span>ข้อมูลอ้างอิง: <b>ผลไม่เป็นทางการ</b></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="toc" id="toc">
+        <p class="toc__title">สารบัญ</p>
+        <a href="#intro">1. บทนำ</a>
+        <a href="#hypotheses">2. สมมติฐานตั้งต้น</a>
+        <a href="#overview">3. ภาพรวมคะแนนทั้ง 2 ระบบ</a>
+        <a href="#h1">4. นิยามพรรคเล็กที่ใช้วิเคราะห์</a>
+        <a href="#hotspots">5. เขตที่มีสัญญาณกาผิดสูง</a>
+        <a href="#evidence">6. หลักฐานว่าไม่น่าใช่เรื่องบังเอิญ</a>
+        <a href="#origin">7. ต้นทางคะแนนพรรคเล็ก</a>
+        <a href="#next">8. สรุปและขั้นถัดไป</a>
+      </aside>
+
+      <main class="article">
+        <section id="intro" class="section">
+          <h2>1) บทนำ</h2>
+          <p>
+            งานนี้เป็นการอ่านข้อมูลเชิงสถิติจากผลเลือกตั้ง โดยยังไม่สรุปเชิงกล่าวหาใดๆ
+            รอบนี้ตั้งใจทำให้เห็นภาพรวมก่อน แล้วค่อยๆเพิ่มการวิเคราะห์เชิงลึกในรอบถัดไป
+          </p>
+          <div class="kpi-grid" id="overview-kpis"></div>
+          <div class="callout">
+            ข้อสำคัญ: เนื้อหาในหน้านี้เป็น “ข้อสังเกตจากข้อมูล” เพื่อชวนคิดและตรวจสอบต่อ ไม่ใช่ข้อพิสูจน์ทางกฎหมาย
+          </div>
+        </section>
+
+        <section id="hypotheses" class="section">
+          <h2>2) สมมติฐานตั้งต้น</h2>
+          <p>
+            ใช้สมมติฐานจาก <code>hypothesisv2.md</code> เป็นแนวทาง และจะเริ่มจาก “สมมติฐานข้อ 1” ก่อน
+          </p>
+          <article id="hypothesis-content" class="paper-block">กำลังโหลด...</article>
+        </section>
+
+        <section id="overview" class="section">
+          <h2>3) ภาพรวมคะแนน (บัญชีรายชื่อ เทียบ แบ่งเขต)</h2>
+          <p>
+            เริ่มจากภาพรวมประเทศก่อน โดยเทียบคะแนนของแต่ละพรรคระหว่างการเลือกตั้งแบบบัญชีรายชื่อและแบบแบ่งเขต
+          </p>
+          <div class="chart" id="party-top-chart"></div>
+          <div class="paper-block">
+            <h3>ตารางพรรคคะแนนสูงสุด Top 10 (เทียบบัญชีรายชื่อกับแบ่งเขต)</h3>
+            <div class="table-wrap">
+              <table class="data-table" id="party-top-table"></table>
+            </div>
+            <div id="overview-summary" class="callout"></div>
+          </div>
+        </section>
+
+        <section id="h1" class="section">
+          <h2>4) นิยามพรรคเล็กที่ใช้วิเคราะห์</h2>
+          <p>
+            ขั้นนี้คือการตั้ง “ขอบเขตพรรคเล็ก” ที่จะใช้ต่อในทุกส่วนถัดไป เช่น เบอร์ 1-10 และตัดพรรคอันดับต้นออกตามที่ตั้งไว้
+          </p>
+          <div class="paper-block">
+            <h3>ตั้งค่าการดูข้อมูล</h3>
+            <div class="inline-controls">
+              <label class="control-label">
+                หมายเลขพรรคเริ่มต้น
+                <input id="range-min" type="number" min="1" max="99" value="1" />
+              </label>
+              <label class="control-label">
+                หมายเลขพรรคสิ้นสุด
+                <input id="range-max" type="number" min="1" max="99" value="10" />
+              </label>
+              <label class="control-label">
+                ตัดพรรคอันดับต้นออกกี่พรรค (เพื่อดูพรรคเล็ก)
+                <input id="exclude-top" type="number" min="0" max="10" value="6" />
+              </label>
+            </div>
+          </div>
+          <div class="chart" id="party-number-trend-chart"></div>
+          <article class="paper-block">
+            <h3>ผลลัพธ์พรรคที่เข้าเกณฑ์นิยามนี้</h3>
+            <div class="table-wrap">
+              <table class="data-table" id="h1-party-table"></table>
+            </div>
+            <div id="h1-summary" class="callout"></div>
+          </article>
+        </section>
+
+        <section id="hotspots" class="section">
+          <h2>5) เขตที่มีสัญญาณกาผิดสูง</h2>
+          <p>
+            จากนิยามพรรคเล็กด้านบน เราจัดอันดับเขตที่ “คะแนนรวมพรรคเล็กต่อคะแนนรวมทั้งเขต” สูงที่สุด เพื่อหาเขตน่าสงสัย
+          </p>
+          <div class="paper-block">
+            <h3>ตั้งค่าการดูข้อมูล</h3>
+            <div class="inline-controls">
+              <label class="control-label">
+                จำนวนเขตที่ต้องการดู
+                <input id="hotspot-topn-input" type="number" min="10" max="100" value="30" />
+              </label>
+            </div>
+          </div>
+          <div class="chart" id="hotspot-chart"></div>
+          <article class="paper-block">
+            <h3>ตารางเขตน่าสงสัยอันดับสูง</h3>
+            <div class="table-wrap">
+              <table class="data-table" id="hotspot-table"></table>
+            </div>
+            <div id="hotspot-summary" class="callout"></div>
+          </article>
+          <article class="paper-block">
+            <h3>ในเขตน่าสงสัยเหล่านี้ พรรคใหญ่ 4 พรรค ใครชนะบ้าง</h3>
+            <div class="table-wrap">
+              <table class="data-table" id="hotspot-winner-table"></table>
+            </div>
+          </article>
+        </section>
+
+        <section id="evidence" class="section">
+          <h2>6) หลักฐานสนับสนุนว่า “ไม่น่าใช่เรื่องบังเอิญ”</h2>
+          <p>
+            ส่วนนี้เพิ่มหลักฐาน 4 ชั้น: เทียบในจังหวัดเดียวกัน, fixed effects model, placebo test และเปรียบเทียบพรรคประชาชนกับพรรคอื่นในเขตน่าสงสัยเดียวกัน
+          </p>
+
+          <article class="paper-block">
+            <h3>Evidence A: เทียบเขตน่าสงสัย vs เขตปกติ (ภายในจังหวัดเดียวกัน)</h3>
+            <div class="kpi-grid" id="evidence-a-kpis"></div>
+            <div class="chart" id="evidence-a-box"></div>
+            <div class="table-wrap">
+              <table class="data-table" id="evidence-a-table"></table>
+            </div>
+            <div id="evidence-a-summary" class="callout"></div>
+          </article>
+
+          <article class="paper-block">
+            <h3>Evidence B: Fixed Effects (จังหวัด + พรรคต้นทาง)</h3>
+            <div class="kpi-grid" id="evidence-b-kpis"></div>
+            <div class="chart" id="evidence-b-scatter"></div>
+            <div class="table-wrap">
+              <table class="data-table" id="evidence-b-table"></table>
+            </div>
+            <div id="evidence-b-summary" class="callout"></div>
+          </article>
+
+          <article class="paper-block">
+            <h3>Evidence C: Placebo / Permutation (สุ่มเลขผู้สมัครภายในเขต)</h3>
+            <div class="kpi-grid" id="evidence-c-kpis"></div>
+            <div class="chart" id="evidence-c-hist"></div>
+            <div id="evidence-c-summary" class="callout"></div>
+          </article>
+
+          <article class="paper-block">
+            <h3>Evidence D: พรรคประชาชนเทียบพรรคอื่นในเขตน่าสงสัยเดียวกัน</h3>
+            <div class="kpi-grid" id="evidence-d-kpis"></div>
+            <div class="chart" id="evidence-d-heatmap"></div>
+            <div class="table-wrap">
+              <table class="data-table" id="evidence-d-table"></table>
+            </div>
+            <div id="evidence-d-summary" class="callout"></div>
+          </article>
+        </section>
+
+        <section id="origin" class="section">
+          <h2>7) ย้อนดูต้นทางคะแนนพรรคเล็ก</h2>
+          <p>
+            เมื่อได้เขตน่าสงสัยแล้ว ขั้นนี้จะย้อนดูว่า “คะแนนพรรคเล็ก” ในเขตเหล่านั้น น่าจะโยงไปผู้สมัคร สส.แบบแบ่งเขตของพรรคใดจากเงื่อนไขเลขชน
+          </p>
+          <div class="paper-block">
+            <h3>ตั้งค่าการดูข้อมูล</h3>
+            <div class="inline-controls">
+              <label class="control-label">
+                จังหวัด
+                <select id="origin-province-filter"></select>
+              </label>
+              <label class="control-label">
+                เลือกพรรคเล็กที่ต้องการไล่ย้อนหลัง
+                <select id="origin-small-party-filter"></select>
+              </label>
+              <label class="control-label">
+                จำนวนพรรคต้นทางที่แสดง
+                <input id="origin-topn-input" type="number" min="4" max="30" value="4" />
+              </label>
+              <label class="control-label">
+                <span>โหมดเขตชนะ</span>
+                <span>
+                  <input id="origin-winner-only" type="checkbox" />
+                  นับเฉพาะเขตที่พรรคต้นทางชนะเขต
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="chart" id="origin-source-chart"></div>
+          <article class="paper-block">
+            <h3>ความสัมพันธ์: โอกาสชนะเขต vs คะแนนพรรคเล็ก (แยกตามพรรคต้นทาง)</h3>
+            <p class="hint">
+              แกน X ใช้ “สัดส่วนคะแนน สส.เขตของพรรคต้นทางในเขตนั้น” เป็นตัวแทนโอกาสชนะเขต และแกน Y คือสัดส่วนคะแนนพรรคเล็กในเขตเดียวกัน
+            </p>
+            <div class="chart" id="origin-relation-chart"></div>
+            <div class="table-wrap">
+              <table class="data-table" id="origin-relation-table"></table>
+            </div>
+            <div id="origin-relation-summary" class="callout"></div>
+          </article>
+          <article class="paper-block">
+            <h3>ตารางสรุปพรรคต้นทาง (ของพรรคเล็กที่เลือก)</h3>
+            <p class="hint">
+              หมายเหตุ: คอลัมน์ Normalize ใช้ตัวหารเป็นคะแนน สส.เขตของพรรคต้นทางเฉพาะ “เขตที่เกิดเลขชนจริง” ตาม filter ที่เลือก
+            </p>
+            <div class="table-wrap">
+              <table class="data-table" id="origin-source-table"></table>
+            </div>
+            <div id="origin-summary" class="callout"></div>
+          </article>
+          <article class="paper-block">
+            <h3>ตารางรายเขต: เขตที่พรรคเล็กได้คะแนน และพรรคต้นทางที่เลขชน</h3>
+            <div class="table-wrap">
+              <table class="data-table" id="origin-area-table"></table>
+            </div>
+          </article>
+        </section>
+
+        <section id="next" class="section">
+          <h2>8) สรุปและขั้นถัดไป</h2>
+          <p>
+            ลำดับการอ่านที่แนะนำคือ: นิยามพรรคเล็ก -> คัดเขตน่าสงสัย -> ดูผู้ชนะเขต -> ย้อนหาพรรคต้นทาง
+            หลังจากนี้รอบถัดไปค่อยเพิ่ม:
+          </p>
+          <ul>
+            <li>วิเคราะห์คะแนนแบ่งเขตควบคู่กับบัญชีรายชื่อรายเขต</li>
+            <li>เพิ่มมุม “เลขชน” และความผิดปกติระดับเขต</li>
+            <li>เพิ่มคำอธิบายเชิงตีความทีละขั้น ไม่กระโดดไปข้อสรุปเร็วเกินไป</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

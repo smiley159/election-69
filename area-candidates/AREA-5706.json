@@ -1,0 +1,375 @@
+{
+  "sourceType": "ect-unofficial",
+  "areaCode": "AREA-5706",
+  "voteProgressExists": true,
+  "voteProgressPercent": 95,
+  "goodVotes": 73462,
+  "goodVotePercent": 91.29,
+  "badVotes": 4286,
+  "badVotePercent": 5.33,
+  "noVotes": 2723,
+  "noVotePercent": 3.38,
+  "totalVotes": 80471,
+  "entries": [
+    {
+      "partyCode": "PARTY-0046",
+      "rank": 1,
+      "voteTotal": 30086,
+      "votePercent": 40.95
+    },
+    {
+      "partyCode": "PARTY-0009",
+      "rank": 2,
+      "voteTotal": 17847,
+      "votePercent": 24.29
+    },
+    {
+      "partyCode": "PARTY-0042",
+      "rank": 3,
+      "voteTotal": 5497,
+      "votePercent": 7.48
+    },
+    {
+      "partyCode": "PARTY-0037",
+      "rank": 4,
+      "voteTotal": 4410,
+      "votePercent": 6
+    },
+    {
+      "partyCode": "PARTY-0007",
+      "rank": 5,
+      "voteTotal": 1797,
+      "votePercent": 2.45
+    },
+    {
+      "partyCode": "PARTY-0027",
+      "rank": 6,
+      "voteTotal": 1723,
+      "votePercent": 2.35
+    },
+    {
+      "partyCode": "PARTY-0011",
+      "rank": 7,
+      "voteTotal": 1666,
+      "votePercent": 2.27
+    },
+    {
+      "partyCode": "PARTY-0004",
+      "rank": 8,
+      "voteTotal": 1256,
+      "votePercent": 1.71
+    },
+    {
+      "partyCode": "PARTY-0006",
+      "rank": 9,
+      "voteTotal": 989,
+      "votePercent": 1.35
+    },
+    {
+      "partyCode": "PARTY-0001",
+      "rank": 10,
+      "voteTotal": 942,
+      "votePercent": 1.28
+    },
+    {
+      "partyCode": "PARTY-0002",
+      "rank": 11,
+      "voteTotal": 922,
+      "votePercent": 1.26
+    },
+    {
+      "partyCode": "PARTY-0013",
+      "rank": 12,
+      "voteTotal": 389,
+      "votePercent": 0.53
+    },
+    {
+      "partyCode": "PARTY-0010",
+      "rank": 13,
+      "voteTotal": 344,
+      "votePercent": 0.47
+    },
+    {
+      "partyCode": "PARTY-0005",
+      "rank": 14,
+      "voteTotal": 317,
+      "votePercent": 0.43
+    },
+    {
+      "partyCode": "PARTY-0029",
+      "rank": 15,
+      "voteTotal": 305,
+      "votePercent": 0.42
+    },
+    {
+      "partyCode": "PARTY-0008",
+      "rank": 16,
+      "voteTotal": 289,
+      "votePercent": 0.39
+    },
+    {
+      "partyCode": "PARTY-0038",
+      "rank": 17,
+      "voteTotal": 275,
+      "votePercent": 0.37
+    },
+    {
+      "partyCode": "PARTY-0012",
+      "rank": 18,
+      "voteTotal": 263,
+      "votePercent": 0.36
+    },
+    {
+      "partyCode": "PARTY-0017",
+      "rank": 19,
+      "voteTotal": 256,
+      "votePercent": 0.35
+    },
+    {
+      "partyCode": "PARTY-0033",
+      "rank": 20,
+      "voteTotal": 247,
+      "votePercent": 0.34
+    },
+    {
+      "partyCode": "PARTY-0003",
+      "rank": 21,
+      "voteTotal": 245,
+      "votePercent": 0.33
+    },
+    {
+      "partyCode": "PARTY-0047",
+      "rank": 22,
+      "voteTotal": 241,
+      "votePercent": 0.33
+    },
+    {
+      "partyCode": "PARTY-0048",
+      "rank": 23,
+      "voteTotal": 213,
+      "votePercent": 0.29
+    },
+    {
+      "partyCode": "PARTY-0016",
+      "rank": 24,
+      "voteTotal": 209,
+      "votePercent": 0.28
+    },
+    {
+      "partyCode": "PARTY-0030",
+      "rank": 25,
+      "voteTotal": 202,
+      "votePercent": 0.27
+    },
+    {
+      "partyCode": "PARTY-0049",
+      "rank": 26,
+      "voteTotal": 195,
+      "votePercent": 0.27
+    },
+    {
+      "partyCode": "PARTY-0036",
+      "rank": 27,
+      "voteTotal": 193,
+      "votePercent": 0.26
+    },
+    {
+      "partyCode": "PARTY-0024",
+      "rank": 28,
+      "voteTotal": 183,
+      "votePercent": 0.25
+    },
+    {
+      "partyCode": "PARTY-0028",
+      "rank": 29,
+      "voteTotal": 178,
+      "votePercent": 0.24
+    },
+    {
+      "partyCode": "PARTY-0043",
+      "rank": 30,
+      "voteTotal": 150,
+      "votePercent": 0.2
+    },
+    {
+      "partyCode": "PARTY-0026",
+      "rank": 31,
+      "voteTotal": 116,
+      "votePercent": 0.16
+    },
+    {
+      "partyCode": "PARTY-0014",
+      "rank": 32,
+      "voteTotal": 108,
+      "votePercent": 0.15
+    },
+    {
+      "partyCode": "PARTY-0031",
+      "rank": 33,
+      "voteTotal": 106,
+      "votePercent": 0.14
+    },
+    {
+      "partyCode": "PARTY-0045",
+      "rank": 34,
+      "voteTotal": 97,
+      "votePercent": 0.13
+    },
+    {
+      "partyCode": "PARTY-0015",
+      "rank": 35,
+      "voteTotal": 90,
+      "votePercent": 0.12
+    },
+    {
+      "partyCode": "PARTY-0057",
+      "rank": 36,
+      "voteTotal": 84,
+      "votePercent": 0.11
+    },
+    {
+      "partyCode": "PARTY-0041",
+      "rank": 37,
+      "voteTotal": 80,
+      "votePercent": 0.11
+    },
+    {
+      "partyCode": "PARTY-0034",
+      "rank": 38,
+      "voteTotal": 78,
+      "votePercent": 0.11
+    },
+    {
+      "partyCode": "PARTY-0022",
+      "rank": 39,
+      "voteTotal": 77,
+      "votePercent": 0.1
+    },
+    {
+      "partyCode": "PARTY-0044",
+      "rank": 40,
+      "voteTotal": 73,
+      "votePercent": 0.1
+    },
+    {
+      "partyCode": "PARTY-0032",
+      "rank": 41,
+      "voteTotal": 71,
+      "votePercent": 0.1
+    },
+    {
+      "partyCode": "PARTY-0040",
+      "rank": 42,
+      "voteTotal": 66,
+      "votePercent": 0.09
+    },
+    {
+      "partyCode": "PARTY-0051",
+      "rank": 43,
+      "voteTotal": 62,
+      "votePercent": 0.08
+    },
+    {
+      "partyCode": "PARTY-0020",
+      "rank": 44,
+      "voteTotal": 58,
+      "votePercent": 0.08
+    },
+    {
+      "partyCode": "PARTY-0021",
+      "rank": 45,
+      "voteTotal": 55,
+      "votePercent": 0.07
+    },
+    {
+      "partyCode": "PARTY-0035",
+      "rank": 46,
+      "voteTotal": 53,
+      "votePercent": 0.07
+    },
+    {
+      "partyCode": "PARTY-0023",
+      "rank": 47,
+      "voteTotal": 51,
+      "votePercent": 0.07
+    },
+    {
+      "partyCode": "PARTY-0018",
+      "rank": 48,
+      "voteTotal": 48,
+      "votePercent": 0.07
+    },
+    {
+      "partyCode": "PARTY-0039",
+      "rank": 49,
+      "voteTotal": 43,
+      "votePercent": 0.06
+    },
+    {
+      "partyCode": "PARTY-0056",
+      "rank": 50,
+      "voteTotal": 43,
+      "votePercent": 0.06
+    },
+    {
+      "partyCode": "PARTY-0025",
+      "rank": 51,
+      "voteTotal": 41,
+      "votePercent": 0.06
+    },
+    {
+      "partyCode": "PARTY-0019",
+      "rank": 52,
+      "voteTotal": 35,
+      "votePercent": 0.05
+    },
+    {
+      "partyCode": "PARTY-0054",
+      "rank": 53,
+      "voteTotal": 27,
+      "votePercent": 0.04
+    },
+    {
+      "partyCode": "PARTY-0052",
+      "rank": 54,
+      "voteTotal": 25,
+      "votePercent": 0.03
+    },
+    {
+      "partyCode": "PARTY-0055",
+      "rank": 55,
+      "voteTotal": 17,
+      "votePercent": 0.02
+    },
+    {
+      "partyCode": "PARTY-0053",
+      "rank": 56,
+      "voteTotal": 15,
+      "votePercent": 0.02
+    },
+    {
+      "partyCode": "PARTY-0050",
+      "rank": 57,
+      "voteTotal": 14,
+      "votePercent": 0.02
+    },
+    {
+      "partyCode": "PARTY-0058",
+      "rank": 58,
+      "voteTotal": 0,
+      "votePercent": 0
+    },
+    {
+      "partyCode": "PARTY-0059",
+      "rank": 59,
+      "voteTotal": 0,
+      "votePercent": 0
+    },
+    {
+      "partyCode": "PARTY-0060",
+      "rank": 60,
+      "voteTotal": 0,
+      "votePercent": 0
+    }
+  ]
+}

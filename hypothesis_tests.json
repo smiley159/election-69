@@ -1,0 +1,20 @@
+{
+  "tests": [
+    {
+      "name": "winner_gap_positive_rate",
+      "description": "สัดส่วนเขตที่ winner_gap > 0 (ผู้ชนะเขตได้ share แบ่งเขตมากกว่า share บัญชีรายชื่อของพรรคเดียวกัน)",
+      "effect_size": 0.8125,
+      "ci": null,
+      "p_value": null,
+      "decision": "exploratory_only"
+    },
+    {
+      "name": "anomaly_ratio_party_ranking",
+      "description": "จัดอันดับพรรคตาม anomaly ratio จาก residual z-score",
+      "effect_size": null,
+      "ci": null,
+      "p_value": null,
+      "decision": "ranking_only"
+    }
+  ]
+}

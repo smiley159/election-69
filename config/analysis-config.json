@@ -1,0 +1,11 @@
+{
+  "small_party_range": [1, 9],
+  "base_party_numbers": [7, 9, 22, 26, 29, 31, 37],
+  "outlier_percentiles": [0.99, 0.97, 0.95],
+  "top_n_default": 20,
+  "labels": {
+    "project": "Election 69 Analysis Dashboard",
+    "small_party": "Proxy party-number range",
+    "base_party": "Base parties"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "lastUpdatedAt": "2026-02-09T07:33:48.604Z",
+  "sourceType": "ect-unofficial",
+  "areaCode": "AREA-4701",
+  "win66PartyCode": "PARTY-0009",
+  "voteProgressExists": true,
+  "voteProgressPercent": 95,
+  "goodVotes": 83226,
+  "goodVotePercent": 93.63,
+  "badVotes": 2142,
+  "badVotePercent": 2.41,
+  "noVotes": 3517,
+  "noVotePercent": 3.96,
+  "totalVotes": 88885,
+  "totalEligibleVoters": 133910,
+  "totalStations": 233,
+  "stationsReported": 0,
+  "entries": [
+    {
+      "candidateCode": "CANDIDATE-MP-470106",
+      "partyCode": "PARTY-0042",
+      "rank": 1,
+      "voteTotal": 25107,
+      "votePercent": 30.17
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-470101",
+      "partyCode": "PARTY-0037",
+      "rank": 2,
+      "voteTotal": 21567,
+      "votePercent": 25.91
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-470104",
+      "partyCode": "PARTY-0046",
+      "rank": 3,
+      "voteTotal": 17844,
+      "votePercent": 21.44
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-470105",
+      "partyCode": "PARTY-0009",
+      "rank": 4,
+      "voteTotal": 15370,
+      "votePercent": 18.47
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-470107",
+      "partyCode": "PARTY-0011",
+      "rank": 5,
+      "voteTotal": 1016,
+      "votePercent": 1.22
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-470103",
+      "partyCode": "PARTY-0006",
+      "rank": 6,
+      "voteTotal": 733,
+      "votePercent": 0.88
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-470102",
+      "partyCode": "PARTY-0027",
+      "rank": 7,
+      "voteTotal": 707,
+      "votePercent": 0.85
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-470109",
+      "partyCode": "PARTY-0010",
+      "rank": 8,
+      "voteTotal": 695,
+      "votePercent": 0.84
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-470110",
+      "partyCode": "PARTY-0056",
+      "rank": 9,
+      "voteTotal": 101,
+      "votePercent": 0.12
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-470108",
+      "partyCode": "PARTY-0043",
+      "rank": 10,
+      "voteTotal": 86,
+      "votePercent": 0.1
+    }
+  ]
+}

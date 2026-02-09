@@ -1,0 +1,7 @@
+{
+  "anomaly_quantile": 0.97,
+  "min_district_mapping_coverage": 0.9,
+  "small_party_range": [1, 9],
+  "base_party_numbers": [7, 9, 22, 26, 29, 31, 37],
+  "top_watchlist_limit": 200
+}

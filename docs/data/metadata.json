@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-02-09T12:04:35.295090+00:00",
+  "input": {
+    "areaFileCount": 400,
+    "areaCount": 400,
+    "partyCount": 60,
+    "candidateCount": 3527
+  },
+  "checks": {
+    "areaCountIs400": true,
+    "nationalConsistency": {
+      "total_diff": 0,
+      "good_diff": 0,
+      "bad_diff": 0,
+      "no_diff": 0
+    },
+    "partyMismatchCount": 0
+  },
+  "dataSha256": "17dcb388e0ade96733ac0e70f76918ae48db16857b426abaf5ab9a29064ddb9f"
+}

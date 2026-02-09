@@ -1,0 +1,83 @@
+{
+  "lastUpdatedAt": "2026-02-09T07:33:48.604Z",
+  "sourceType": "ect-unofficial",
+  "areaCode": "AREA-3005",
+  "win66PartyCode": "PARTY-0009",
+  "voteProgressExists": true,
+  "voteProgressPercent": 95,
+  "goodVotes": 83962,
+  "goodVotePercent": 92.12,
+  "badVotes": 3689,
+  "badVotePercent": 4.05,
+  "noVotes": 3495,
+  "noVotePercent": 3.83,
+  "totalVotes": 91146,
+  "totalEligibleVoters": 133508,
+  "totalStations": 292,
+  "stationsReported": 0,
+  "entries": [
+    {
+      "candidateCode": "CANDIDATE-MP-300501",
+      "partyCode": "PARTY-0009",
+      "rank": 1,
+      "voteTotal": 37213,
+      "votePercent": 44.32
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-300507",
+      "partyCode": "PARTY-0037",
+      "rank": 2,
+      "voteTotal": 29409,
+      "votePercent": 35.03
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-300504",
+      "partyCode": "PARTY-0046",
+      "rank": 3,
+      "voteTotal": 13111,
+      "votePercent": 15.62
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-300506",
+      "partyCode": "PARTY-0011",
+      "rank": 4,
+      "voteTotal": 1441,
+      "votePercent": 1.72
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-300509",
+      "partyCode": "PARTY-0043",
+      "rank": 5,
+      "voteTotal": 1118,
+      "votePercent": 1.33
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-300502",
+      "partyCode": "PARTY-0027",
+      "rank": 6,
+      "voteTotal": 789,
+      "votePercent": 0.94
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-300505",
+      "partyCode": "PARTY-0042",
+      "rank": 7,
+      "voteTotal": 579,
+      "votePercent": 0.69
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-300508",
+      "partyCode": "PARTY-0029",
+      "rank": 8,
+      "voteTotal": 301,
+      "votePercent": 0.36
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-300503",
+      "partyCode": "PARTY-0049",
+      "rank": 9,
+      "voteTotal": 1,
+      "votePercent": 0
+    }
+  ]
+}

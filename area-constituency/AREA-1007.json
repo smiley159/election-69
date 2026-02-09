@@ -1,0 +1,111 @@
+{
+  "lastUpdatedAt": "2026-02-09T07:33:48.604Z",
+  "sourceType": "ect-unofficial",
+  "areaCode": "AREA-1007",
+  "win66PartyCode": "PARTY-0046",
+  "voteProgressExists": true,
+  "voteProgressPercent": 95,
+  "goodVotes": 82447,
+  "goodVotePercent": 92.31,
+  "badVotes": 1556,
+  "badVotePercent": 1.74,
+  "noVotes": 5317,
+  "noVotePercent": 5.95,
+  "totalVotes": 89320,
+  "totalEligibleVoters": 138276,
+  "totalStations": 208,
+  "stationsReported": 0,
+  "entries": [
+    {
+      "candidateCode": "CANDIDATE-MP-100708",
+      "partyCode": "PARTY-0046",
+      "rank": 1,
+      "voteTotal": 39714,
+      "votePercent": 48.17
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100706",
+      "partyCode": "PARTY-0037",
+      "rank": 2,
+      "voteTotal": 11631,
+      "votePercent": 14.11
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100704",
+      "partyCode": "PARTY-0006",
+      "rank": 3,
+      "voteTotal": 10819,
+      "votePercent": 13.12
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100701",
+      "partyCode": "PARTY-0027",
+      "rank": 4,
+      "voteTotal": 7699,
+      "votePercent": 9.34
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100703",
+      "partyCode": "PARTY-0009",
+      "rank": 5,
+      "voteTotal": 6024,
+      "votePercent": 7.31
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100713",
+      "partyCode": "PARTY-0011",
+      "rank": 6,
+      "voteTotal": 2000,
+      "votePercent": 2.43
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100709",
+      "partyCode": "PARTY-0043",
+      "rank": 7,
+      "voteTotal": 1356,
+      "votePercent": 1.64
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100707",
+      "partyCode": "PARTY-0042",
+      "rank": 8,
+      "voteTotal": 838,
+      "votePercent": 1.02
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100705",
+      "partyCode": "PARTY-0048",
+      "rank": 9,
+      "voteTotal": 681,
+      "votePercent": 0.83
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100710",
+      "partyCode": "PARTY-0049",
+      "rank": 10,
+      "voteTotal": 580,
+      "votePercent": 0.7
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100711",
+      "partyCode": "PARTY-0020",
+      "rank": 11,
+      "voteTotal": 511,
+      "votePercent": 0.62
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100712",
+      "partyCode": "PARTY-0044",
+      "rank": 12,
+      "voteTotal": 316,
+      "votePercent": 0.38
+    },
+    {
+      "candidateCode": "CANDIDATE-MP-100702",
+      "partyCode": "PARTY-0007",
+      "rank": 13,
+      "voteTotal": 278,
+      "votePercent": 0.34
+    }
+  ]
+}
