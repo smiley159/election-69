@@ -44,6 +44,7 @@
       <a href="#origin-win">6. ต้นทางคะแนนพรรคเล็ก (เฉพาะเขตที่ชนะ)</a>
       <a href="#origin-relation">7. ความสัมพันธ์คะแนน สส.เขต vs คะแนนพรรคเล็ก</a>
       <a href="#hotspots">8. เขตที่มีสัญญาณกาผิดสูง</a>
+      <a href="#bad-votes">9. เขตที่มี % บัตรเสียสูง</a>
     </aside>
 
     <main class="article">
@@ -283,6 +284,44 @@
             <table class="data-table" id="hotspot-winner-table"></table>
           </div>
           <div id="hotspot-winner-summary" class="callout"></div>
+        </article>
+      </section>
+
+      <section id="bad-votes" class="section">
+        <h2>9) เขตที่มี % บัตรเสียสูง และผู้ชนะในเขตเหล่านั้น</h2>
+        <p>
+          ในหัวข้อนี้เราดูเฉพาะการเลือกตั้ง สส.แบบแบ่งเขต โดยจัดอันดับเขตที่มี “สัดส่วนบัตรเสีย” สูงที่สุด
+          เพื่อดูว่าผู้ชนะในเขตกลุ่มนี้กระจุกตัวที่พรรคใดมากผิดสัดส่วนเมื่อเทียบกับภาพรวมทั้งประเทศหรือไม่
+        </p>
+        <div class="paper-block">
+          <h3>ตั้งค่าการดูข้อมูล</h3>
+          <div class="inline-controls">
+            <label class="control-label">
+              ประเภทคะแนน
+              <select id="badvote-type-filter">
+                <option value="constituency">สส.แบบแบ่งเขต</option>
+                <option value="partylist">สส.แบบบัญชีรายชื่อ (Party List)</option>
+              </select>
+            </label>
+            <label class="control-label">
+              จำนวนเขตที่ต้องการดู
+              <input id="badvote-topn-input" type="number" min="10" max="400" value="30" />
+            </label>
+          </div>
+        </div>
+        <div class="chart" id="badvote-chart"></div>
+        <article class="paper-block">
+          <h3>ตารางเขตที่ % บัตรเสียสูง</h3>
+          <div class="table-wrap">
+            <table class="data-table" id="badvote-area-table"></table>
+          </div>
+        </article>
+        <article class="paper-block">
+          <h3>พรรคที่ชนะในกลุ่มเขตบัตรเสียสูง</h3>
+          <div class="table-wrap">
+            <table class="data-table" id="badvote-winner-table"></table>
+          </div>
+          <div id="badvote-summary" class="callout"></div>
         </article>
       </section>
 

@@ -8,6 +8,8 @@ const state = {
   originProvince: "ALL",
   originSmallPartyCode: "ALL",
   hotspotTopN: 30,
+  badVoteTopN: 30,
+  badVoteType: "constituency",
   sorts: {},
 };
 
@@ -640,6 +642,168 @@ function renderHotspots() {
     `โดยพรรคเล็กที่ได้คะแนนสูงสุดในเขตนี้คือ เบอร์ ${top1.topSmallPartyNo ?? "?"} ${escapeHtml(top1.topSmallPartyName || "ไม่ทราบ")} ` +
     `และถ้าดูภาพรวม Top ${fmtNum(state.hotspotTopN)} เขต พรรคใหญ่ที่ชนะมากสุดคือ ` +
     `เบอร์ ${topWinner?.partyNo ?? "?"} ${escapeHtml(topWinner?.partyName || "ไม่ทราบ")} (${fmtNum(topWinner?.winCount || 0)} เขต)`;
+}
+
+function getBadVoteRows(voteType = "constituency") {
+  const out = [];
+  const isPartyList = voteType === "partylist";
+  for (const area of state.data?.areas || []) {
+    const totals = isPartyList ? (area?.totals || {}) : (area?.constituencyTotals || {});
+    const totalVotes = Number(totals.totalVotes || 0);
+    const badVotes = Number(totals.badVotes || 0);
+    const goodVotes = Number(totals.goodVotes || 0);
+    const noVotes = Number(totals.noVotes || 0);
+    const badRate = totalVotes > 0 ? badVotes / totalVotes : 0;
+    const winner = (isPartyList ? (area.partyResults || []) : (area.constituencyPartyResults || [])).find((r) => r.rank === 1) || {};
+    const winnerVotePercentRaw = Number(winner.votePercent || 0);
+    const winnerVotePercent = winnerVotePercentRaw <= 1 ? winnerVotePercentRaw * 100 : winnerVotePercentRaw;
+    out.push({
+      areaCode: area.areaCode,
+      provinceName: area.provinceName,
+      areaName: area.areaName,
+      totalVotes,
+      badVotes,
+      goodVotes,
+      noVotes,
+      badRate,
+      winnerPartyCode: winner.partyCode,
+      winnerPartyNo: winner.partyNo,
+      winnerPartyName: winner.partyName,
+      winnerVotes: Number(winner.voteTotal || 0),
+      winnerVotePercent,
+    });
+  }
+  out.sort((a, b) => Number(b.badRate || 0) - Number(a.badRate || 0));
+  return out;
+}
+
+function renderBadVoteAnalysis() {
+  const allRows = getBadVoteRows(state.badVoteType);
+  const rows = allRows.slice(0, state.badVoteTopN);
+  const modeLabel = state.badVoteType === "partylist" ? "บัญชีรายชื่อ" : "แบ่งเขต";
+
+  Plotly.newPlot(
+    "badvote-chart",
+    [
+      {
+        type: "bar",
+        x: rows.map((r) => `${r.provinceName} | ${r.areaName}`),
+        y: rows.map((r) => Number(r.badRate || 0) * 100),
+        text: barText(
+          rows.map((r) => Number(r.badRate || 0) * 100),
+          2,
+          "%"
+        ),
+        textposition: "outside",
+        cliponaxis: false,
+        marker: { color: rows.map((r) => partyColorByNo(r.winnerPartyNo, "#9b2226")) },
+      },
+    ],
+    {
+      title: `Top ${fmtNum(state.badVoteTopN)} เขตที่มี % บัตรเสียสูงสุด (${modeLabel})`,
+      margin: { t: 52, r: 14, b: 170, l: 70 },
+      yaxis: { title: `% บัตรเสีย (${modeLabel})` },
+    },
+    { responsive: true }
+  );
+
+  renderSortableTable({
+    tableId: "badvote-area-table",
+    columns: [
+      { key: "provinceName", label: "จังหวัด" },
+      { key: "areaName", label: "เขต" },
+      { key: "badRate", label: `% บัตรเสีย (${modeLabel})`, format: (v) => fmtPct(v, 2) },
+      { key: "badVotes", label: "บัตรเสีย (ใบ)", format: (v) => fmtNum(v) },
+      { key: "totalVotes", label: "คะแนนรวมทั้งเขต", format: (v) => fmtNum(v) },
+      { key: "winnerPartyNo", label: "ผู้ชนะ (เบอร์พรรค)" },
+      { key: "winnerPartyName", label: "ผู้ชนะ (ชื่อพรรค)" },
+      { key: "winnerVotes", label: "คะแนนผู้ชนะ", format: (v) => fmtNum(v) },
+      { key: "winnerVotePercent", label: "% คะแนนผู้ชนะ", format: (v) => `${fmtNum(v, 2)}%` },
+    ],
+    rows,
+    sortId: "badvote-area",
+    defaultKey: "badRate",
+    onSortChange: renderBadVoteAnalysis,
+  });
+
+  const topCounter = new Map();
+  const allCounter = new Map();
+  for (const r of rows) {
+    const key = r.winnerPartyCode || `UNKNOWN-${r.winnerPartyNo || "NA"}`;
+    if (!topCounter.has(key)) {
+      topCounter.set(key, {
+        winnerPartyCode: r.winnerPartyCode,
+        winnerPartyNo: r.winnerPartyNo,
+        winnerPartyName: r.winnerPartyName,
+        topCount: 0,
+      });
+    }
+    topCounter.get(key).topCount += 1;
+  }
+  for (const r of allRows) {
+    const key = r.winnerPartyCode || `UNKNOWN-${r.winnerPartyNo || "NA"}`;
+    if (!allCounter.has(key)) {
+      allCounter.set(key, {
+        winnerPartyCode: r.winnerPartyCode,
+        winnerPartyNo: r.winnerPartyNo,
+        winnerPartyName: r.winnerPartyName,
+        allCount: 0,
+      });
+    }
+    allCounter.get(key).allCount += 1;
+  }
+
+  const winnerRows = Array.from(topCounter.values())
+    .map((r) => {
+      const all = allCounter.get(r.winnerPartyCode || `UNKNOWN-${r.winnerPartyNo || "NA"}`) || { allCount: 0 };
+      const topShare = rows.length > 0 ? r.topCount / rows.length : 0;
+      const allShare = allRows.length > 0 ? Number(all.allCount || 0) / allRows.length : 0;
+      return {
+        winnerPartyNo: r.winnerPartyNo,
+        winnerPartyName: r.winnerPartyName,
+        topCount: r.topCount,
+        topShare,
+        allCount: Number(all.allCount || 0),
+        allShare,
+        liftVsAll: allShare > 0 ? topShare / allShare : 0,
+      };
+    })
+    .sort((a, b) => Number(b.topCount || 0) - Number(a.topCount || 0));
+
+  renderSortableTable({
+    tableId: "badvote-winner-table",
+    columns: [
+      { key: "winnerPartyNo", label: "หมายเลขพรรค" },
+      { key: "winnerPartyName", label: "ชื่อพรรค" },
+      { key: "topCount", label: `ชนะใน Top ${fmtNum(state.badVoteTopN)} เขต`, format: (v) => fmtNum(v) },
+      { key: "topShare", label: "สัดส่วนในกลุ่มบัตรเสียสูง", format: (v) => fmtPct(v, 2) },
+      { key: "allCount", label: "ชนะทั้งประเทศ", format: (v) => fmtNum(v) },
+      { key: "allShare", label: "สัดส่วนชนะทั้งประเทศ", format: (v) => fmtPct(v, 2) },
+      { key: "liftVsAll", label: "เทียบฐานประเทศ (Lift)", format: (v) => `${fmtNum(v, 2)}x` },
+    ],
+    rows: winnerRows,
+    sortId: "badvote-winner",
+    defaultKey: "topCount",
+    onSortChange: renderBadVoteAnalysis,
+  });
+
+  const top1Area = rows[0];
+  const top1Winner = winnerRows[0];
+  const summaryEl = document.getElementById("badvote-summary");
+  if (!top1Area || !top1Winner) {
+    summaryEl.textContent = "ยังไม่มีข้อมูลเพียงพอสำหรับสรุปความเชื่อมโยงของบัตรเสียกับผู้ชนะ";
+    return;
+  }
+  summaryEl.innerHTML =
+    `เขตที่มี % บัตรเสียสูงสุดตอนนี้คือ ${escapeHtml(top1Area.provinceName || "")} ${escapeHtml(top1Area.areaName || "")} ` +
+    `(% บัตรเสีย ${fmtPct(top1Area.badRate, 2)} ของการเลือกตั้งแบบ${modeLabel}, บัตรเสีย ${fmtNum(top1Area.badVotes)} ใบ) ` +
+    `และผู้ชนะคือ พรรคเบอร์ ${top1Area.winnerPartyNo ?? "?"} ${escapeHtml(top1Area.winnerPartyName || "ไม่ทราบ")}. ` +
+    `ถ้าดูทั้ง Top ${fmtNum(state.badVoteTopN)} เขตบัตรเสียสูง พรรคที่ชนะมากสุดคือ ` +
+    `พรรคเบอร์ ${top1Winner.winnerPartyNo ?? "?"} ${escapeHtml(top1Winner.winnerPartyName || "ไม่ทราบ")} ` +
+    `${fmtNum(top1Winner.topCount)} เขต (${fmtPct(top1Winner.topShare, 2)}) ` +
+    `เทียบกับฐานทั้งประเทศ ${fmtPct(top1Winner.allShare, 2)} ` +
+    `(Lift ${fmtNum(top1Winner.liftVsAll, 2)}x). ` +
+    `อ่านแบบตรงไปตรงมา: มีการกระจุกตัวของผู้ชนะในกลุ่มเขตบัตรเสียสูง แต่ยังไม่ใช่หลักฐานเชิงสาเหตุโดยตรง.`;
 }
 
 function getEvidenceSmallPartyRange() {
@@ -1321,6 +1485,22 @@ function setupControls() {
     renderHotspots();
   });
 
+  const badVoteInput = document.getElementById("badvote-topn-input");
+  badVoteInput?.addEventListener("change", (e) => {
+    state.badVoteTopN = Math.max(10, Math.min(400, Number(e.target.value || 30)));
+    e.target.value = String(state.badVoteTopN);
+    renderBadVoteAnalysis();
+  });
+
+  const badVoteTypeSel = document.getElementById("badvote-type-filter");
+  if (badVoteTypeSel) {
+    badVoteTypeSel.value = state.badVoteType;
+    badVoteTypeSel.addEventListener("change", (e) => {
+      state.badVoteType = e.target.value === "partylist" ? "partylist" : "constituency";
+      renderBadVoteAnalysis();
+    });
+  }
+
   const provinceSel = document.getElementById("origin-province-filter");
   const provinces = ["ALL", ...new Set((state.data?.areas || []).map((a) => a.provinceName).filter(Boolean))].sort((a, b) =>
     String(a).localeCompare(String(b), "th")
@@ -1358,6 +1538,7 @@ async function init() {
   setupControls();
   renderOverview();
   renderHotspots();
+  renderBadVoteAnalysis();
   refreshOriginSmallPartyFilter();
   renderOriginAnalysis();
   setupTocActive();
