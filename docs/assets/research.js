@@ -35,6 +35,10 @@ function fmtPct(v, digits = 2) {
   return `${fmtNum(Number(v || 0) * 100, digits)}%`;
 }
 
+function barText(values, digits = 0, suffix = "") {
+  return (values || []).map((v) => `${fmtNum(v, digits)}${suffix}`);
+}
+
 function escapeHtml(s) {
   return String(s ?? "")
     .replace(/&/g, "&amp;")
@@ -318,6 +322,9 @@ function renderOverview() {
         name: "คะแนนบัญชีรายชื่อ",
         x: majorRows.map((p) => partyLabel(p)),
         y: majorRows.map((p) => Number(p.voteTotal || 0)),
+        text: barText(majorRows.map((p) => Number(p.voteTotal || 0))),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: "#ca6702" },
       },
       {
@@ -325,6 +332,9 @@ function renderOverview() {
         name: "คะแนนแบ่งเขต",
         x: majorRows.map((p) => partyLabel(p)),
         y: majorRows.map((p) => Number(p.constituencyVoteTotal || 0)),
+        text: barText(majorRows.map((p) => Number(p.constituencyVoteTotal || 0))),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: "#005f73" },
       },
     ],
@@ -344,6 +354,9 @@ function renderOverview() {
         name: "คะแนนบัญชีรายชื่อ",
         x: smallRows.map((p) => partyLabel(p)),
         y: smallRows.map((p) => Number(p.voteTotal || 0)),
+        text: barText(smallRows.map((p) => Number(p.voteTotal || 0))),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: "#ca6702" },
       },
       {
@@ -351,6 +364,9 @@ function renderOverview() {
         name: "คะแนนแบ่งเขต",
         x: smallRows.map((p) => partyLabel(p)),
         y: smallRows.map((p) => Number(p.constituencyVoteTotal || 0)),
+        text: barText(smallRows.map((p) => Number(p.constituencyVoteTotal || 0))),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: "#005f73" },
       },
     ],
@@ -493,6 +509,13 @@ function renderHotspots() {
         type: "bar",
         x: rows.map((r) => `${r.provinceName} | ${r.areaName}`),
         y: rows.map((r) => Number(r.smallVoteShare || 0) * 100),
+        text: barText(
+          rows.map((r) => Number(r.smallVoteShare || 0) * 100),
+          2,
+          "%"
+        ),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: "#bb3e03" },
       },
     ],
@@ -577,6 +600,30 @@ function renderHotspots() {
     defaultKey: "winCount",
     onSortChange: renderHotspots,
   });
+
+  const winnerSummary = document.getElementById("hotspot-winner-summary");
+  const totalTopN = rows.length;
+  const majorWinnerRows = winnerRows.filter((r) => r.partyNo !== "-");
+  const topWinners = majorWinnerRows
+    .slice()
+    .sort((a, b) => Number(b.winCount || 0) - Number(a.winCount || 0));
+  const first = topWinners[0];
+  const second = topWinners[1];
+  const third = topWinners[2];
+  const other = winnerRows.find((r) => r.partyNo === "-");
+  if (!totalTopN || !first) {
+    winnerSummary.textContent = "ยังไม่มีข้อมูลพอสำหรับสรุปผู้ชนะในกลุ่มเขตน่าสงสัย";
+  } else {
+    winnerSummary.innerHTML =
+      `สรุป Top ${fmtNum(totalTopN)} เขตน่าสงสัย: ` +
+      `พรรคที่ชนะมากที่สุดคือ เบอร์ ${first.partyNo} ${escapeHtml(first.partyName || "ไม่ทราบ")} ` +
+      `${fmtNum(first.winCount)} เขต (${fmtPct(first.winShare, 2)}), ` +
+      `รองลงมาคือ เบอร์ ${second?.partyNo ?? "-"} ${escapeHtml(second?.partyName || "ไม่ทราบ")} ` +
+      `${fmtNum(second?.winCount || 0)} เขต (${fmtPct(second?.winShare || 0, 2)}), ` +
+      `และ เบอร์ ${third?.partyNo ?? "-"} ${escapeHtml(third?.partyName || "ไม่ทราบ")} ` +
+      `${fmtNum(third?.winCount || 0)} เขต (${fmtPct(third?.winShare || 0, 2)}). ` +
+      `ส่วนพรรคนอกกลุ่มใหญ่ 5 พรรคชนะรวม ${fmtNum(other?.winCount || 0)} เขต (${fmtPct(other?.winShare || 0, 2)}).`;
+  }
 
   const top1 = rows[0];
   const summary = document.getElementById("hotspot-summary");
@@ -722,6 +769,13 @@ function renderEvidence() {
         name: "เขตที่พรรคชนะ",
         x: chartRows.map((r) => `เบอร์ ${r.sourcePartyNo ?? "?"} ${r.sourcePartyName || "ไม่ทราบ"}`),
         y: chartRows.map((r) => Number(r.winSwapRate || 0) * 100),
+        text: barText(
+          chartRows.map((r) => Number(r.winSwapRate || 0) * 100),
+          2,
+          "%"
+        ),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: "#ca6702" },
       },
       {
@@ -729,6 +783,13 @@ function renderEvidence() {
         name: "เขตที่พรรคไม่ชนะ",
         x: chartRows.map((r) => `เบอร์ ${r.sourcePartyNo ?? "?"} ${r.sourcePartyName || "ไม่ทราบ"}`),
         y: chartRows.map((r) => Number(r.loseSwapRate || 0) * 100),
+        text: barText(
+          chartRows.map((r) => Number(r.loseSwapRate || 0) * 100),
+          2,
+          "%"
+        ),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: "#005f73" },
       },
     ],
@@ -751,8 +812,6 @@ function renderEvidence() {
       { key: "diffSwapRate", label: "ส่วนต่าง (ชนะ-ไม่ชนะ)", format: (v) => fmtPct(v, 2) },
       { key: "winAreaCount", label: "จำนวนเขตที่ชนะ (เข้าเงื่อนไขชนเลข)", format: (v) => fmtNum(v) },
       { key: "loseAreaCount", label: "จำนวนเขตที่ไม่ชนะ (เข้าเงื่อนไขชนเลข)", format: (v) => fmtNum(v) },
-      { key: "matchedRowsWin", label: "แถวจับคู่ฝั่งชนะ", format: (v) => fmtNum(v) },
-      { key: "matchedRowsLose", label: "แถวจับคู่ฝั่งไม่ชนะ", format: (v) => fmtNum(v) },
     ],
     rows,
     sortId: "evidence-winlose",
@@ -957,6 +1016,9 @@ function renderOriginAnalysis() {
         type: "bar",
         x: top.map((r) => `เบอร์ ${r.sourcePartyNo ?? "?"} ${r.sourcePartyName || "ไม่ทราบ"}`),
         y: top.map((r) => Number(r.proxyVotes || 0)),
+        text: barText(top.map((r) => Number(r.proxyVotes || 0))),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: top.map((r) => partyColorByNo(r.sourcePartyNo)) },
       },
     ],
@@ -978,6 +1040,13 @@ function renderOriginAnalysis() {
         type: "bar",
         x: topNormalized.map((r) => `เบอร์ ${r.sourcePartyNo ?? "?"} ${r.sourcePartyName || "ไม่ทราบ"}`),
         y: topNormalized.map((r) => Number(r.normalizedByConstituency || 0) * 100),
+        text: barText(
+          topNormalized.map((r) => Number(r.normalizedByConstituency || 0) * 100),
+          2,
+          "%"
+        ),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: topNormalized.map((r) => partyColorByNo(r.sourcePartyNo)) },
       },
     ],
@@ -1096,7 +1165,6 @@ function renderOriginAnalysis() {
       { key: "normalizedByConstituency", label: "เปอร์เซ็นต์ของคะแนน สส.เขต", format: (v) => fmtPct(v, 3) },
       { key: "shareOfProxyVotes", label: "สัดส่วนต่อทั้งหมด", format: (v) => fmtPct(v, 2) },
       { key: "areaCount", label: "จำนวนเขตที่พบ", format: (v) => fmtNum(v) },
-      { key: "rows", label: "จำนวนแถวที่จับคู่ได้", format: (v) => fmtNum(v) },
     ],
     rows: top,
     sortId: "origin-source",
@@ -1110,7 +1178,6 @@ function renderOriginAnalysis() {
       normalizedByConstituency: topDenomSum > 0 ? topProxySum / topDenomSum : 0,
       shareOfProxyVotes: topShareSum,
       areaCount: "-",
-      rows: top.reduce((s, r) => s + Number(r.rows || 0), 0),
     },
   });
 
@@ -1156,7 +1223,7 @@ function renderOriginAnalysis() {
     `เราพบว่าพรรคต้นทางที่แจกคะแนนมากเป็นอันดับ 1 คือ ` +
     `พรรคเบอร์ ${top1.sourcePartyNo ?? "?"} ${escapeHtml(top1.sourcePartyName || "ไม่ทราบ")} ` +
     `มีคะแนนของพรรคเล็กที่เกี่ยวข้อง ${fmtNum(top1.proxyVotes)} เสียง ` +
-    `คิดเป็น ${fmtPct(top1.shareOfProxyVotes, 2)} ของคะแนนกลุ่มที่จับคู่ได้ ` +
+    `คิดเป็น ${fmtPct(top1.shareOfProxyVotes, 2)} ของคะแนนพรรคเล็กทั้งหมด ` +
     `เทียบเป็นสัดส่วน ${fmtPct(top1.normalizedByConstituency, 3)} ของคะแนน สส.เขต`
 
   const winOnlyAreaRows = areaRows.filter((r) => r.sourcePartyWonArea);
@@ -1175,6 +1242,9 @@ function renderOriginAnalysis() {
         type: "bar",
         x: winRows.map((r) => `เบอร์ ${r.sourcePartyNo ?? "?"} ${r.sourcePartyName || "ไม่ทราบ"}`),
         y: winRows.map((r) => Number(r.proxyVotes || 0)),
+        text: barText(winRows.map((r) => Number(r.proxyVotes || 0))),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: winRows.map((r) => partyColorByNo(r.sourcePartyNo)) },
       },
     ],
@@ -1193,6 +1263,13 @@ function renderOriginAnalysis() {
         type: "bar",
         x: winRowsNormalized.map((r) => `เบอร์ ${r.sourcePartyNo ?? "?"} ${r.sourcePartyName || "ไม่ทราบ"}`),
         y: winRowsNormalized.map((r) => Number(r.normalizedByConstituency || 0) * 100),
+        text: barText(
+          winRowsNormalized.map((r) => Number(r.normalizedByConstituency || 0) * 100),
+          2,
+          "%"
+        ),
+        textposition: "outside",
+        cliponaxis: false,
         marker: { color: winRowsNormalized.map((r) => partyColorByNo(r.sourcePartyNo)) },
       },
     ],
@@ -1213,7 +1290,6 @@ function renderOriginAnalysis() {
       { key: "normalizedByConstituency", label: "เปอร์เซ็นต์ของคะแนน สส.เขต", format: (v) => fmtPct(v, 3) },
       { key: "shareOfProxyVotes", label: "สัดส่วนต่อทั้งหมด", format: (v) => fmtPct(v, 2) },
       { key: "areaCount", label: "จำนวนเขตที่ชนะที่พบ", format: (v) => fmtNum(v) },
-      { key: "rows", label: "จำนวนแถวที่จับคู่ได้", format: (v) => fmtNum(v) },
     ],
     rows: winRows,
     sortId: "origin-win-source",
