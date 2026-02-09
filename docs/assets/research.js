@@ -10,6 +10,9 @@ const state = {
   hotspotTopN: 30,
   badVoteTopN: 30,
   badVoteType: "constituency",
+  permutationIterations: 1000,
+  permutationSeed: 69,
+  permutationLastResult: null,
   sorts: {},
 };
 
@@ -39,6 +42,12 @@ function fmtPct(v, digits = 2) {
 
 function barText(values, digits = 0, suffix = "") {
   return (values || []).map((v) => `${fmtNum(v, digits)}${suffix}`);
+}
+
+function fmtOneInOdds(p, iterations = 0) {
+  const pv = Number(p || 0);
+  if (pv <= 0) return `น้อยกว่า 1 ใน ${fmtNum(Math.max(1, Number(iterations || 0)))}`;
+  return `ประมาณ 1 ใน ${fmtNum(1 / pv)}`;
 }
 
 function escapeHtml(s) {
@@ -144,6 +153,23 @@ function quantileNumbers(values, q) {
   if (low === high) return arr[low];
   const frac = pos - low;
   return arr[low] * (1 - frac) + arr[high] * frac;
+}
+
+function makeRng(seed) {
+  let s = Number(seed || 1) % 2147483647;
+  if (s <= 0) s += 2147483646;
+  return function rng() {
+    s = (s * 16807) % 2147483647;
+    return (s - 1) / 2147483646;
+  };
+}
+
+function shuffleInPlace(arr, rng) {
+  for (let i = arr.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(rng() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
 }
 
 function renderKpis(containerId, kpis) {
@@ -804,6 +830,268 @@ function renderBadVoteAnalysis() {
     `เทียบกับฐานทั้งประเทศ ${fmtPct(top1Winner.allShare, 2)} ` +
     `(Lift ${fmtNum(top1Winner.liftVsAll, 2)}x). ` +
     `อ่านแบบตรงไปตรงมา: มีการกระจุกตัวของผู้ชนะในกลุ่มเขตบัตรเสียสูง แต่ยังไม่ใช่หลักฐานเชิงสาเหตุโดยตรง.`;
+}
+
+function buildPermutationBaseRows() {
+  const eligibleSmallPartyCodes = getOriginEligibleSmallPartyCodes();
+  const rows = [];
+
+  for (const area of state.data?.areas || []) {
+    const candidates = (area.candidates || []).filter((c) => Number(c.candidateNo || 0) > 0);
+    if (!candidates.length) continue;
+
+    const candidateNos = [];
+    const candidateSourceNos = [];
+    const candidateSourceNames = [];
+    const noToIdx = new Map();
+
+    for (const c of candidates) {
+      const no = Number(c.candidateNo || 0);
+      if (noToIdx.has(no)) continue;
+      noToIdx.set(no, candidateNos.length);
+      candidateNos.push(no);
+      candidateSourceNos.push(Number(c.candidatePartyNo || 0));
+      candidateSourceNames.push(c.candidatePartyName || "");
+    }
+
+    if (!candidateNos.length) continue;
+
+    const smallEntries = (area.partyResults || []).filter((p) => eligibleSmallPartyCodes.has(p.partyCode));
+    if (!smallEntries.length) continue;
+
+    const smallPairs = [];
+    let actualProxyVotes = 0;
+    const actualByPartyNo = {};
+    for (const p of smallEntries) {
+      const smallNo = Number(p.partyNo || 0);
+      const idx = noToIdx.get(smallNo);
+      if (idx == null) continue;
+      const votes = Number(p.voteTotal || 0);
+      smallPairs.push({ idx, votes });
+      const sourceNo = candidateSourceNos[idx];
+      if (EVIDENCE_MAJOR_PARTY_NOS.has(sourceNo)) {
+        actualProxyVotes += votes;
+        actualByPartyNo[sourceNo] = Number(actualByPartyNo[sourceNo] || 0) + votes;
+      }
+    }
+    if (!smallPairs.length) continue;
+
+    rows.push({
+      areaCode: area.areaCode,
+      candidateSourceNos,
+      candidateSourceNames,
+      smallPairs,
+      actualProxyVotes,
+      actualByPartyNo,
+    });
+  }
+
+  return rows;
+}
+
+function runPermutationTest(iterations, seed) {
+  const baseRows = buildPermutationBaseRows();
+  const rng = makeRng(seed);
+
+  let actualTotal = 0;
+  const actualByPartyNo = {};
+  for (const r of baseRows) {
+    actualTotal += Number(r.actualProxyVotes || 0);
+    for (const [partyNoRaw, v] of Object.entries(r.actualByPartyNo || {})) {
+      const partyNo = Number(partyNoRaw);
+      actualByPartyNo[partyNo] = Number(actualByPartyNo[partyNo] || 0) + Number(v || 0);
+    }
+  }
+
+  const dist = [];
+  const partyStats = {};
+  for (const no of EVIDENCE_MAJOR_PARTY_NOS) {
+    partyStats[no] = { sum: 0, geActual: 0 };
+  }
+
+  for (let i = 0; i < iterations; i += 1) {
+    let iterTotal = 0;
+    const iterByPartyNo = {};
+    for (const no of EVIDENCE_MAJOR_PARTY_NOS) iterByPartyNo[no] = 0;
+
+    for (const r of baseRows) {
+      const shuffled = shuffleInPlace([...r.candidateSourceNos], rng);
+      for (const pair of r.smallPairs) {
+        const sourceNo = Number(shuffled[pair.idx] || 0);
+        if (!EVIDENCE_MAJOR_PARTY_NOS.has(sourceNo)) continue;
+        const votes = Number(pair.votes || 0);
+        iterTotal += votes;
+        iterByPartyNo[sourceNo] = Number(iterByPartyNo[sourceNo] || 0) + votes;
+      }
+    }
+    dist.push(iterTotal);
+
+    for (const no of EVIDENCE_MAJOR_PARTY_NOS) {
+      const iv = Number(iterByPartyNo[no] || 0);
+      partyStats[no].sum += iv;
+      if (iv >= Number(actualByPartyNo[no] || 0)) partyStats[no].geActual += 1;
+    }
+  }
+
+  const mean = dist.reduce((s, v) => s + v, 0) / Math.max(dist.length, 1);
+  const variance =
+    dist.reduce((s, v) => {
+      const d = v - mean;
+      return s + d * d;
+    }, 0) / Math.max(dist.length, 1);
+  const std = Math.sqrt(variance);
+  const geActual = dist.filter((v) => v >= actualTotal).length;
+  const pValue = geActual / Math.max(dist.length, 1);
+  const percentile = dist.filter((v) => v <= actualTotal).length / Math.max(dist.length, 1);
+
+  return {
+    iterations,
+    seed,
+    baseRowCount: baseRows.length,
+    actualTotal,
+    mean,
+    std,
+    pValue,
+    percentile,
+    dist,
+    actualByPartyNo,
+    partyStats,
+  };
+}
+
+function renderPermutationFromResult(result) {
+  if (!result) return;
+  const summary = document.getElementById("permutation-summary");
+  const methodSummary = document.getElementById("permutation-method-summary");
+  const delta = result.actualTotal - result.mean;
+  const z = result.std > 0 ? delta / result.std : 0;
+  const ciLow = result.mean - 1.96 * result.std;
+  const ciHigh = result.mean + 1.96 * result.std;
+  const pPct = result.pValue * 100;
+  const pText = result.pValue <= 0 ? `< ${fmtNum(100 / Math.max(result.iterations, 1), 3)}%` : `${fmtNum(pPct, 3)}%`;
+
+  renderKpis("permutation-kpis", [
+    { label: "จำนวนเขตที่ใช้คำนวณ", value: fmtNum(result.baseRowCount) },
+    { label: "รอบสุ่ม", value: fmtNum(result.iterations) },
+    { label: "คะแนนจริงที่จับคู่ได้", value: fmtNum(result.actualTotal) },
+    { label: "ค่าเฉลี่ยโลกสุ่ม", value: fmtNum(result.mean) },
+    { label: "มากกว่าค่าเฉลี่ยโลกสุ่ม", value: fmtNum(delta) },
+    { label: "empirical p-value", value: `${fmtNum(result.pValue, 4)}` },
+  ]);
+
+  const bins = 30;
+  const min = Math.min(...result.dist);
+  const max = Math.max(...result.dist);
+  const span = Math.max(max - min, 1);
+  const width = span / bins;
+  const freq = new Array(bins).fill(0);
+  for (const v of result.dist) {
+    const idx = Math.min(bins - 1, Math.floor((v - min) / width));
+    freq[idx] += 1;
+  }
+  const centers = freq.map((_, i) => min + width * (i + 0.5));
+
+  Plotly.newPlot(
+    "permutation-chart",
+    [
+      {
+        type: "bar",
+        x: centers,
+        y: freq,
+        marker: { color: "#adb5bd" },
+        name: "โลกสุ่ม",
+      },
+      {
+        type: "scatter",
+        mode: "lines",
+        x: [result.actualTotal, result.actualTotal],
+        y: [0, Math.max(...freq) * 1.1],
+        line: { color: "#d00000", width: 3 },
+        name: "ค่าจริง",
+      },
+    ],
+    {
+      title: "Permutation distribution: ถ้าสุ่มเลขผู้สมัคร ผลควรอยู่ช่วงไหน",
+      margin: { t: 52, r: 14, b: 60, l: 70 },
+      xaxis: { title: "คะแนนพรรคเล็กที่จับคู่ได้ (เสียง)" },
+      yaxis: { title: "ความถี่ที่เกิดจากโลกสุ่ม" },
+      showlegend: true,
+    },
+    { responsive: true }
+  );
+
+  const partyTotals = state.data?.overview?.party_totals || [];
+  const partyNameByNo = new Map(partyTotals.map((p) => [Number(p.partyNo || 0), p.partyName]));
+  const partyRows = [...EVIDENCE_MAJOR_PARTY_NOS]
+    .map((no) => {
+      const actual = Number(result.actualByPartyNo[no] || 0);
+      const meanPlacebo = Number(result.partyStats[no]?.sum || 0) / Math.max(result.iterations, 1);
+      const p = Number(result.partyStats[no]?.geActual || 0) / Math.max(result.iterations, 1);
+      return {
+        partyNo: no,
+        partyName: partyNameByNo.get(no) || "ไม่ทราบ",
+        actualVotes: actual,
+        placeboMeanVotes: meanPlacebo,
+        deltaVotes: actual - meanPlacebo,
+        liftVsPlacebo: meanPlacebo > 0 ? actual / meanPlacebo : 0,
+        empiricalPValue: p,
+        oneInOdds: fmtOneInOdds(p, result.iterations),
+      };
+    })
+    .sort((a, b) => Number(b.deltaVotes || 0) - Number(a.deltaVotes || 0));
+
+  renderSortableTable({
+    tableId: "permutation-party-table",
+    columns: [
+      { key: "partyNo", label: "หมายเลขพรรค" },
+      { key: "partyName", label: "ชื่อพรรค" },
+      { key: "actualVotes", label: "ค่าจริง (เสียง)", format: (v) => fmtNum(v) },
+      { key: "placeboMeanVotes", label: "ค่าเฉลี่ยโลกสุ่ม (เสียง)", format: (v) => fmtNum(v) },
+      { key: "deltaVotes", label: "ส่วนเกินจากโลกสุ่ม", format: (v) => fmtNum(v) },
+      { key: "liftVsPlacebo", label: "เทียบโลกสุ่ม (Lift)", format: (v) => `${fmtNum(v, 2)}x` },
+      { key: "empiricalPValue", label: "empirical p-value", format: (v) => fmtNum(v, 4) },
+      { key: "oneInOdds", label: "โอกาสเทียบเท่า" },
+    ],
+    rows: partyRows,
+    sortId: "permutation-party",
+    defaultKey: "deltaVotes",
+    onSortChange: () => renderPermutationFromResult(state.permutationLastResult),
+  });
+
+  const topParty = partyRows[0];
+  const partyOddsLine = partyRows
+    .map((r) => `เบอร์ ${r.partyNo} ${r.partyName}: ${r.oneInOdds}`)
+    .join(" | ");
+  if (methodSummary) {
+    methodSummary.innerHTML =
+      `<b>วิธีคิด</b><br>` +
+      `1) ในการทดสอบนี้ เราถือว่า “บังเอิญ 1” เป็นข้อมูลจริง (Given): คะแนนพรรคเล็กในแต่ละเขตมีเท่าเดิมทุกอย่าง<br>` +
+      `2) สิ่งที่เราวัดคือ “บังเอิญ 2”: ถ้าสุ่มเลขผู้สมัครใหม่ภายในเขต โอกาสที่เลขจะชนกับพรรคใหญ่จะเกิดได้เองบ่อยแค่ไหน<br>` +
+      `3) จากการสุ่ม ${fmtNum(result.iterations)} รอบให้ค่าเฉลี่ย ${fmtNum(result.mean)} เสียง, SD = ${fmtNum(result.std, 2)} เสียง ` +
+      `(ช่วง 95% CI อยู่ที่ ${fmtNum(ciLow)} ถึง ${fmtNum(ciHigh)} เสียง)<br>` +
+      `4) ค่าจริงคือ ${fmtNum(result.actualTotal)} เสียง สูงกว่าค่าเฉลี่ยจากการสุ่มถึง ${fmtNum(delta)} เสียง (ซึ่งเทียบเท่า z ≈ ${fmtNum(z, 2)})<br>` +
+      `5) โอกาสที่ผลของการสุ่มจะได้ผลอย่างน้อยเท่าค่าจริง (empirical p-value) = ${pText}`;
+  }
+
+  summary.innerHTML =
+    `ผลทดสอบรอบนี้: ค่าจริง = ${fmtNum(result.actualTotal)} เสียง, โลกสุ่มเฉลี่ย = ${fmtNum(result.mean)} เสียง, ` +
+    `ต่างกัน ${fmtNum(delta)} เสียง (z ≈ ${fmtNum(z, 2)}), percentile ${fmtPct(result.percentile, 2)}, p-value = ${fmtNum(
+      result.pValue,
+      4
+    )}. ` +
+    `${describePValue(result.pValue)}. ` +
+    `ถ้าแยกตามพรรคต้นทาง พรรคที่สูงกว่าโลกสุ่มมากสุดคือ เบอร์ ${topParty?.partyNo ?? "?"} ${escapeHtml(
+      topParty?.partyName || "ไม่ทราบ"
+    )} (ส่วนเกิน ${fmtNum(topParty?.deltaVotes || 0)} เสียง, Lift ${fmtNum(topParty?.liftVsPlacebo || 0, 2)}x).` +
+    `<br>โอกาสเทียบเท่ารายพรรค: ${escapeHtml(partyOddsLine)}.`;
+}
+
+function renderPermutationTest() {
+  const summary = document.getElementById("permutation-summary");
+  summary.textContent = "กำลังคำนวณ permutation test...";
+  const result = runPermutationTest(state.permutationIterations, state.permutationSeed);
+  state.permutationLastResult = result;
+  renderPermutationFromResult(result);
 }
 
 function getEvidenceSmallPartyRange() {
@@ -1501,6 +1789,19 @@ function setupControls() {
     });
   }
 
+  const permutationIterationsInput = document.getElementById("permutation-iterations");
+  const permutationSeedInput = document.getElementById("permutation-seed");
+  const permutationRunBtn = document.getElementById("permutation-run-btn");
+  if (permutationIterationsInput) permutationIterationsInput.value = String(state.permutationIterations);
+  if (permutationSeedInput) permutationSeedInput.value = String(state.permutationSeed);
+  permutationRunBtn?.addEventListener("click", () => {
+    state.permutationIterations = Math.max(100, Math.min(5000, Number(permutationIterationsInput?.value || 1000)));
+    state.permutationSeed = Math.max(1, Math.min(999999, Number(permutationSeedInput?.value || 69)));
+    if (permutationIterationsInput) permutationIterationsInput.value = String(state.permutationIterations);
+    if (permutationSeedInput) permutationSeedInput.value = String(state.permutationSeed);
+    renderPermutationTest();
+  });
+
   const provinceSel = document.getElementById("origin-province-filter");
   const provinces = ["ALL", ...new Set((state.data?.areas || []).map((a) => a.provinceName).filter(Boolean))].sort((a, b) =>
     String(a).localeCompare(String(b), "th")
@@ -1539,6 +1840,7 @@ async function init() {
   renderOverview();
   renderHotspots();
   renderBadVoteAnalysis();
+  renderPermutationTest();
   refreshOriginSmallPartyFilter();
   renderOriginAnalysis();
   setupTocActive();

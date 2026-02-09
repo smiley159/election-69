@@ -45,6 +45,7 @@
       <a href="#origin-relation">7. ความสัมพันธ์คะแนน สส.เขต vs คะแนนพรรคเล็ก</a>
       <a href="#hotspots">8. เขตที่มีสัญญาณกาผิดสูง</a>
       <a href="#bad-votes">9. เขตที่มี % บัตรเสียสูง</a>
+      <a href="#permutation">10. Permutation Test</a>
     </aside>
 
     <main class="article">
@@ -322,6 +323,57 @@
             <table class="data-table" id="badvote-winner-table"></table>
           </div>
           <div id="badvote-summary" class="callout"></div>
+        </article>
+      </section>
+
+      <section id="permutation" class="section">
+        <h2>10) Permutation Test: สุ่มเลขผู้สมัครเพื่อเช็คว่า “บังเอิญ” หรือไม่</h2>
+        <p>
+          เอาล่ะ หากใครยังเชื่อว่าเรื่องทั้งหมดนี้เป็นแค่ความบังเอิญ ผมมีวิธีทดสอบง่ายๆอีกรูปแบบหนึ่งเรียกว่าการทำ
+          Permutation Test
+        </p>
+        <p>
+          ไอเดียคืออย่างงี้ครับ การที่จะเกิดเหตุการณ์ที่พรรคเล็กได้คะแนนสูงผิดปกติเพราะการกาผิด
+          หรือการสลับเบอร์กับพรรคใหญ่ที่มีหมายเลขผู้สมัครตรงกับพรรคเล็กนั้น มันควรจะเกิดขึ้นได้ด้วยความบังเอิญ
+          จะต้องบังเอิญ 2 ชั้น ในโลกคู่ขนาดเหตุการณ์มันเป็นอย่างนี้
+        </p>
+        <p>
+          บังเอิญที่ 1 - เขตนั้นๆพรรคเล็กได้คะแนนเยอะมากจริงๆ และเยอะด้วยตัวเองไม่ได้ถูกเทคะแนนส้มหล่นมาจากพรรคใหญ่
+          <br />
+          บังเอิญที่ 2 - พรรคใหญ่ที่มีหมายเลขผู้สมัครตรงกับพรรคเล็กในเขตนั้นๆ แล้วดันบังเอิญเกิดเหตุการณ์ขึ้นในหลายๆเขต
+          ทำให้ดูเหมือนการกาผิดมาจากพรรคใหญ่พวกนี้
+        </p>
+        <p>
+          โอเคเราจะสมมติว่าบังเอิญที่ 1 ไม่ใช่เรื่องบังเอิญ สมมติว่าเรายอมรับว่ามันคือเรื่องจริง
+          เราจะมาวัดว่าโอกาสที่บังเอิญที่ 2 จะเกิดขึ้นได้นั้น มันน้อยแค่ไหน
+        </p>
+        <p>
+          วิธิการคือเราจะยึดคะแนนพรรคเล็กเท่าเดิมในทุกๆเขต แต่ลองสลับหมายเลขผู้สมัคร สส.เขตของพรรคในเขตนั้นๆแบบสุ่ม
+          ทำแบบนี้ซ้ำๆ 1000 รอบ แน่นอนมีโอกาศที่จะลงเอยในรูปแบบที่เราพบเจออยู่แต่มีโอกาสแค่ใหน มาดูกัน
+        </p>
+        <div class="paper-block">
+          <h3>ตั้งค่าการทดสอบ</h3>
+          <div class="inline-controls">
+            <label class="control-label">
+              จำนวนรอบสุ่ม
+              <input id="permutation-iterations" type="number" min="100" max="5000" step="100" value="1000" />
+            </label>
+            <label class="control-label">
+              ค่า seed
+              <input id="permutation-seed" type="number" min="1" max="999999" step="1" value="69" />
+            </label>
+            <button id="permutation-run-btn" type="button">รันทดสอบ</button>
+          </div>
+          <div class="kpi-grid" id="permutation-kpis"></div>
+        </div>
+        <div class="chart" id="permutation-chart"></div>
+        <div id="permutation-method-summary" class="callout"></div>
+        <article class="paper-block">
+          <h3>ผลแยกตามพรรคต้นทาง (พรรคใหญ่ 5 พรรค)</h3>
+          <div class="table-wrap">
+            <table class="data-table" id="permutation-party-table"></table>
+          </div>
+          <div id="permutation-summary" class="callout"></div>
         </article>
       </section>
 
